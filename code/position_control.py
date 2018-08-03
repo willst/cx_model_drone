@@ -66,19 +66,19 @@ try:
 except dronekit.APIException:
     logging.critical('Timeout! Fail to connect PX4')
     raise Exception('Timeout! Fail to connct PX4')
-except:picam
+except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
 #state = arm(drone)
 
 # wait position/altitude mode.
-while drone.mode.name != "ALT_HOLD":
+while drone.mode.name != "POSHOLD":
     print "Waiting for the position/altitude mode."
     time.sleep(2)
 
 start_time = time.time()
 print "Start to update CX model, switch mode to end"
-while drone.mode.name == "ALT_HOLD":
+while drone.mode.name == "POSHOLD":
     
     frame_gray = picam.get_frame()
     next = optflow.undistort(frame_gray)
@@ -120,7 +120,8 @@ while drone.mode.name == "ALT_HOLD":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     prvs = next
-    print('Elapsed time:%.5f'%elapsed_time)
+    if elapsed_time > 0.1:
+        print('Elapsed time:%.5f'%elapsed_time)
 
 print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
 print((angle_optical/np.pi) * 180, distance_optical)

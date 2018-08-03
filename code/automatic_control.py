@@ -72,7 +72,7 @@ except dronekit.APIException:
 except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
-state = arm_and_takeoff(drone, 3)
+state = arm_and_takeoff(drone, 2.5)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
@@ -102,7 +102,7 @@ while drone.mode.name == "AUTO":
     sl, sr = optflow.get_speed(flow, left_filter, right_filter, elapsed_time)
 
     # update CX neurons
-    drone_heading = drone.headinpicam.stop()g/180.0*np.pi
+    drone_heading = drone.heading/180.0*np.pi
     velocity = np.array([sl, sr])
     __, __, tb1_optical, __, __, memory_optical, cpu4_optical, __, motor_optical = \
             update_cells(heading=drone_heading, velocity=velocity, tb1=tb1_optical, \
@@ -135,11 +135,12 @@ while drone.mode.name == "AUTO":
     # moniter the mission
     if frame_num%10==0:
         display_seq = drone.commands.next+1
-        print "Moving to waypoint: ", display_seq
+        #print "Moving to waypoint: ", display_seq
         nextwaypoint = drone.commands.next
 
     prvs = next
-    #print('Elapsed time:%.5f'%elapsed_time)
+    if elapsed_time > 0.1:
+        print('Elapsed time:%.5f'%elapsed_time)
 
 print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
 print((angle_optical/np.pi) * 180, distance_optical)
