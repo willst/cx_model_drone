@@ -1,0 +1,693 @@
+INFO:root:Resolution: 320*240
+INFO:root:sl:0.0592592592593 sr:-0.0592592592593 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:-21.6995775693 Distance_optical:0.0262061784904 Angle_gps:46.3004224353 Distance_gps:0.00110557317247                  elapsed_time:0.0929219722748
+INFO:root:sl:0.0148148148148 sr:-0.0148148148148 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:-21.7438201765 Distance_optical:0.0314680818506 Angle_gps:46.182571233 Distance_gps:0.00199352197784                  elapsed_time:0.0667247772217
+INFO:root:sl:0.0185811993848 sr:-0.016896260774 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:-21.6986907385 Distance_optical:0.0467203587671 Angle_gps:46.2900291979 Distance_gps:0.00404563061363                  elapsed_time:0.0665729045868
+INFO:root:sl:-0.0179172473102 sr:0.0423629984852 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:12.0605323038 Distance_optical:0.05631123637 Angle_gps:46.2386557868 Distance_gps:0.00589231539039                  elapsed_time:0.0693531036377
+INFO:root:sl:-0.048076381717 sr:0.0875649703764 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:48.8612368262 Distance_optical:0.13958528446 Angle_gps:46.3262445418 Distance_gps:0.00875690464485                  elapsed_time:0.0674579143524
+INFO:root:sl:-0.0544386900581 sr:0.0948685638754 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:57.2200406993 Distance_optical:0.242823741757 Angle_gps:46.2922371792 Distance_gps:0.0115678693788                  elapsed_time:0.0653879642487
+INFO:root:sl:-0.0312264270876 sr:0.0564643636206 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:59.8716643997 Distance_optical:0.317524023271 Angle_gps:46.3152893342 Distance_gps:0.0149238486562                  elapsed_time:0.0663430690765
+INFO:root:sl:-0.0353391157002 sr:0.0604378457811 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:61.5369787146 Distance_optical:0.396998730225 Angle_gps:46.2850166096 Distance_gps:0.0182388904094                  elapsed_time:0.0710608959198
+INFO:root:sl:-0.0325298529006 sr:0.0531451537727 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:62.582950977 Distance_optical:0.470559658764 Angle_gps:46.2721042579 Distance_gps:0.0217191173246                  elapsed_time:0.0665729045868
+INFO:root:sl:-0.0917540926847 sr:0.112404413032 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:63.9503679028 Distance_optical:0.624864551747 Angle_gps:46.2497857262 Distance_gps:0.0251630712337                  elapsed_time:0.0665888786316
+INFO:root:sl:-0.0426620652896 sr:0.0567320882531 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:64.4195123141 Distance_optical:0.703768585414 Angle_gps:46.2350414217 Distance_gps:0.0286483399357                  elapsed_time:0.0647070407867
+INFO:root:sl:-0.0417365027187 sr:0.0555704137645 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:64.7828615488 Distance_optical:0.780741492109 Angle_gps:46.2205239231 Distance_gps:0.0321176452123                  elapsed_time:0.0708718299866
+INFO:root:sl:-0.0463524914462 sr:0.0567149089305 heading:337 velocity:[0.01, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.42
+INFO:root:Angle_optical:65.088174347 Distance_optical:0.859579971929 Angle_gps:46.209567486 Distance_gps:0.0355981814089                  elapsed_time:0.0668039321899
+INFO:root:sl:-0.0334993819008 sr:0.0424193887122 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:65.2814793549 Distance_optical:0.918466866478 Angle_gps:46.1998819668 Distance_gps:0.039073198196                  elapsed_time:0.0686311721802
+INFO:root:sl:-0.0691932747624 sr:0.100007429808 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:65.6526644405 Distance_optical:1.05746347414 Angle_gps:46.1920068898 Distance_gps:0.0425515276995                  elapsed_time:0.0664048194885
+INFO:root:sl:-0.0389877399043 sr:0.0499520295299 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:65.8035624622 Distance_optical:1.12686814373 Angle_gps:46.1851572498 Distance_gps:0.0460280848368                  elapsed_time:0.0677950382233
+INFO:root:sl:-0.0900742367052 sr:0.109211288789 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.0765958493 Distance_optical:1.278675619 Angle_gps:46.1793372157 Distance_gps:0.0495056539634                  elapsed_time:0.0649499893188
+INFO:root:sl:-0.049563812843 sr:0.0647926870317 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.209891516 Distance_optical:1.36873650513 Angle_gps:46.1742390697 Distance_gps:0.0529826668135                  elapsed_time:0.0680329799652
+INFO:root:sl:-0.0471586222183 sr:0.0571733372158 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.313769117 Distance_optical:1.44821909856 Angle_gps:46.1697882895 Distance_gps:0.0564599926395                  elapsed_time:0.0712230205536
+INFO:root:sl:-0.104125059672 sr:0.116432596475 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.4935747884 Distance_optical:1.61008836492 Angle_gps:46.1658427259 Distance_gps:0.0599371451778                  elapsed_time:0.0630719661713
+INFO:root:sl:-0.0573863902387 sr:0.0605609101146 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.573522504 Distance_optical:1.69429014682 Angle_gps:46.1623353865 Distance_gps:0.0634143949589                  elapsed_time:0.0645651817322
+INFO:root:sl:-0.0521675180323 sr:0.0585417109514 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.6435934777 Distance_optical:1.77568599697 Angle_gps:46.1591896196 Distance_gps:0.0668915909417                  elapsed_time:0.0651590824127
+INFO:root:sl:-0.0552777244084 sr:0.0594192682844 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.7084395256 Distance_optical:1.85830509198 Angle_gps:46.1563563154 Distance_gps:0.0703688172324                  elapsed_time:0.0638320446014
+INFO:root:sl:-0.0412079081699 sr:0.0446304723376 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.7534757697 Distance_optical:1.92036229553 Angle_gps:46.1537889785 Distance_gps:0.0738460268824                  elapsed_time:0.0663139820099
+INFO:root:sl:-0.0726499006517 sr:0.0957600597734 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.8409212561 Distance_optical:2.05351729341 Angle_gps:46.1514529944 Distance_gps:0.0773232460256                  elapsed_time:0.0660691261292
+INFO:root:sl:-0.0424378266637 sr:0.0498939615085 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.8821358994 Distance_optical:2.12289667726 Angle_gps:46.1493178228 Distance_gps:0.0808004600613                  elapsed_time:0.0666990280151
+INFO:root:sl:-0.0885892880903 sr:0.109153220768 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:66.9635347573 Distance_optical:2.27468153941 Angle_gps:46.1473589688 Distance_gps:0.0842776771042                  elapsed_time:0.0655789375305
+INFO:root:sl:-0.114281606672 sr:0.168295998026 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.0697361159 Distance_optical:2.50871509013 Angle_gps:46.14555528 Distance_gps:0.0877548926096                  elapsed_time:0.06667304039
+INFO:root:sl:-0.109481720588 sr:0.159047264905 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.153364744 Distance_optical:2.72989296974 Angle_gps:46.1438891184 Distance_gps:0.0912321090935                  elapsed_time:0.0709369182587
+INFO:root:sl:-0.126160666594 sr:0.187517007902 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.236073007 Distance_optical:2.99066697407 Angle_gps:46.1423452805 Distance_gps:0.0947093251382                  elapsed_time:0.0842571258545
+INFO:root:sl:-0.0895183918204 sr:0.128257748643 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.2848042181 Distance_optical:3.16903319638 Angle_gps:46.1409108001 Distance_gps:0.0981865415211                  elapsed_time:0.067764043808
+INFO:root:sl:-0.0682538959023 sr:0.0974278447881 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.3183055996 Distance_optical:3.30452557119 Angle_gps:46.1395744399 Distance_gps:0.101663757798                  elapsed_time:0.0639250278473
+INFO:root:sl:-0.0735175128717 sr:0.10466134925 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.3513624305 Distance_optical:3.45007817652 Angle_gps:46.1383264736 Distance_gps:0.105140974206                  elapsed_time:0.0672371387482
+INFO:root:sl:-0.0608391287368 sr:0.0833425722079 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.3757556413 Distance_optical:3.56598310031 Angle_gps:46.1371584071 Distance_gps:0.108618190605                  elapsed_time:0.0667850971222
+INFO:root:sl:-0.120098387996 sr:0.142601831467 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.4140089078 Distance_optical:3.76430067391 Angle_gps:46.1360628074 Distance_gps:0.112095407066                  elapsed_time:0.0705289840698
+INFO:root:sl:-0.064450117493 sr:0.0833425722079 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.4345550951 Distance_optical:3.88020608019 Angle_gps:46.1350331321 Distance_gps:0.115572623542                  elapsed_time:0.0640358924866
+INFO:root:sl:-0.0989351441685 sr:0.137750899433 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.4659497256 Distance_optical:4.07177784902 Angle_gps:46.1340636054 Distance_gps:0.119049840053                  elapsed_time:0.0643219947815
+INFO:root:sl:-0.0708709124144 sr:0.090923825777 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.4851021394 Distance_optical:4.19822665265 Angle_gps:46.1331491059 Distance_gps:0.122527056584                  elapsed_time:0.0662281513214
+INFO:root:sl:-0.0603266932732 sr:0.0786049769419 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.5007533215 Distance_optical:4.30754343115 Angle_gps:46.1322850783 Distance_gps:0.126004273137                  elapsed_time:0.0725409984589
+INFO:root:sl:-0.119585952533 sr:0.137864236201 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.5263667754 Distance_optical:4.49927244719 Angle_gps:46.1314674561 Distance_gps:0.129481489708                  elapsed_time:0.0656859874725
+INFO:root:sl:-0.0638574410396 sr:0.0786049769419 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.5400164992 Distance_optical:4.60858889178 Angle_gps:46.1306925985 Distance_gps:0.132958706295                  elapsed_time:0.0657172203064
+INFO:root:sl:-0.0592787261864 sr:0.076136963841 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.5526340554 Distance_optical:4.71447288596 Angle_gps:46.1299572357 Distance_gps:0.136435922895                  elapsed_time:0.0644729137421
+INFO:root:sl:-0.059218073537 sr:0.0756647921992 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.5646240276 Distance_optical:4.81970003991 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0667741298676
+INFO:root:sl:-0.0455885601908 sr:0.0576016832455 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.5734063766 Distance_optical:4.89980665722 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0717768669128
+INFO:root:sl:-0.0406839844998 sr:0.0807100423632 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.5852396394 Distance_optical:5.01204982758 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0837950706482
+INFO:root:sl:-0.038523373634 sr:0.0535515728695 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.5928028087 Distance_optical:5.08652365483 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063266992569
+INFO:root:sl:-0.0977826328933 sr:0.112810832129 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.6080321102 Distance_optical:5.24340851018 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0663170814514
+INFO:root:sl:-0.0586059725078 sr:0.0849881860863 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.6189166307 Distance_optical:5.36160027334 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.062029838562
+INFO:root:sl:-0.0776990606103 sr:0.10772056035 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.632041518 Distance_optical:5.51140502884 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0616800785065
+INFO:root:sl:-0.0585219165028 sr:0.0763798946413 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.6409235568 Distance_optical:5.61762455693 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0676407814026
+INFO:root:sl:-0.101003900053 sr:0.135639153901 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.6558955265 Distance_optical:5.80625349166 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0683319568634
+INFO:root:sl:-0.0836011378848 sr:0.125185353209 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.6688752707 Distance_optical:5.98034357932 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639760494232
+INFO:root:sl:-0.104887932643 sr:0.155087044573 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.6839435209 Distance_optical:6.19601515854 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633480548859
+INFO:root:sl:-0.0677874742209 sr:0.10686005528 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.693729733 Distance_optical:6.34461888408 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631859302521
+INFO:root:sl:-0.0669499744673 sr:0.0969583419192 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.7022205908 Distance_optical:6.47945211893 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0628879070282
+INFO:root:sl:-0.0613784711274 sr:0.0900285223684 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.7097940751 Distance_optical:6.60464784077 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.068540096283
+INFO:root:sl:-0.0490289799539 sr:0.0734617298918 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.7157643368 Distance_optical:6.70680489144 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0669341087341
+INFO:root:sl:-0.0477903821833 sr:0.0655971713746 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.7209437316 Distance_optical:6.79802496378 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0629918575287
+INFO:root:sl:-0.0409879170844 sr:0.0574775093576 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7253690401 Distance_optical:6.87795343881 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.066535949707
+INFO:root:sl:-0.0807487416816 sr:0.116736768617 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7340474232 Distance_optical:7.04028716839 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0649960041046
+INFO:root:sl:-0.0447582705337 sr:0.0606354589529 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7383990236 Distance_optical:7.12460611566 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0624890327454
+INFO:root:sl:-0.0664723791177 sr:0.119331140047 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7466688995 Distance_optical:7.29054554411 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063276052475
+INFO:root:sl:-0.120183427749 sr:0.178590399306 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7583650808 Distance_optical:7.53888703228 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0623369216919
+INFO:root:sl:-0.06092416849 sr:0.119331140047 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7657598339 Distance_optical:7.70482285832 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063600063324
+INFO:root:sl:-0.113812430767 sr:0.178590399306 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7762499802 Distance_optical:7.95315874952 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0698008537292
+INFO:root:sl:-0.0757021294146 sr:0.119524795375 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7829120261 Distance_optical:8.11935998067 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064110994339
+INFO:root:sl:-0.134961388674 sr:0.178784054634 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.7923827505 Distance_optical:8.36795914713 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063863992691
+INFO:root:sl:-0.139490545082 sr:0.212581242813 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8029359535 Distance_optical:8.66354834982 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636651515961
+INFO:root:sl:-0.0850410074424 sr:0.153321983554 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8101107457 Distance_optical:8.87673549606 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0638430118561
+INFO:root:sl:-0.144300266702 sr:0.212581242813 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8195063554 Distance_optical:9.17231494247 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0632939338684
+INFO:root:sl:-0.0850410074424 sr:0.153321983554 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8259151711 Distance_optical:9.38549481162 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0683000087738
+INFO:root:sl:-0.0814250935703 sr:0.130030862692 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8311263615 Distance_optical:9.56628806011 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0669090747833
+INFO:root:sl:-0.022165834311 sr:0.0707716034331 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8338806251 Distance_optical:9.6646870102 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0670790672302
+INFO:root:sl:-0.0501125047688 sr:0.0890464300186 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.837267348 Distance_optical:9.7884937926 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633149147034
+INFO:root:sl:-0.109371764028 sr:0.148305689278 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8427214453 Distance_optical:9.9946898914 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0649130344391
+INFO:root:sl:-0.0501125047688 sr:0.0890464300186 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8458892948 Distance_optical:10.1184936309 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0642809867859
+INFO:root:sl:-0.0677619757629 sr:0.113745609259 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8498246696 Distance_optical:10.2766356246 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0658957958221
+INFO:root:sl:-0.0619443036944 sr:0.090504200687 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8528703509 Distance_optical:10.4024634006 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0642018318176
+INFO:root:sl:-0.0370615143206 sr:0.0979850988319 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8560856809 Distance_optical:10.5386904458 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0647339820862
+INFO:root:sl:-0.0432344880681 sr:0.0757421505574 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.858514645 Distance_optical:10.6439924774 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.068039894104
+INFO:root:sl:-0.0801286131182 sr:0.130565178271 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8625906294 Distance_optical:10.8255112071 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0678510665894
+INFO:root:sl:-0.0421194597196 sr:0.0764609729546 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8649146525 Distance_optical:10.9318101076 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0625700950623
+INFO:root:sl:-0.0423197350016 sr:0.0709412054617 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8670307838 Distance_optical:11.0304343819 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0630791187286
+INFO:root:sl:-0.0433203204484 sr:0.0695290361988 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8690683354 Distance_optical:11.1270946307 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631020069122
+INFO:root:sl:-0.0920324830832 sr:0.128788295458 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8727503038 Distance_optical:11.306135844 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0642499923706
+INFO:root:sl:-0.0455742101629 sr:0.0695290361988 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8746899513 Distance_optical:11.4027938171 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0668051242828
+INFO:root:sl:-0.0467749881579 sr:0.0662515619491 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8765077665 Distance_optical:11.494894751 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0682189464569
+INFO:root:sl:-0.106034247417 sr:0.125510821208 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8798727345 Distance_optical:11.6693740856 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0668179988861
+INFO:root:sl:-0.0520000550381 sr:0.0662515619491 heading:337 velocity:[0.0, 0.0, 0.2] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.37
+INFO:root:Angle_optical:67.8816086207 Distance_optical:11.76147285 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.065239906311
+INFO:root:sl:-0.104342122499 sr:0.125510821208 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.8848236039 Distance_optical:11.9359480247 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0648148059845
+INFO:root:sl:-0.124882517222 sr:0.174495821342 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.8891399946 Distance_optical:12.1785136328 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0637149810791
+INFO:root:sl:-0.0703061736897 sr:0.115236562082 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.8918972969 Distance_optical:12.3387002972 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.06760597229
+INFO:root:sl:-0.107876272784 sr:0.153467140687 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.8954598572 Distance_optical:12.5520262994 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0685441493988
+INFO:root:sl:-0.075766240924 sr:0.110799881028 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.897957425 Distance_optical:12.7060402388 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0705108642578
+INFO:root:sl:-0.113690307416 sr:0.170059140287 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9016748806 Distance_optical:12.9424211706 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0661759376526
+INFO:root:sl:-0.126933217339 sr:0.192234603996 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9057165124 Distance_optical:13.2096191467 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064208984375
+INFO:root:sl:-0.0790974414198 sr:0.132975344736 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9084176672 Distance_optical:13.39444503 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0670988559723
+INFO:root:sl:-0.0819685019885 sr:0.124310291703 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9108760766 Distance_optical:13.5672239543 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0640170574188
+INFO:root:sl:-0.0318581327958 sr:0.101514324856 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9128375736 Distance_optical:13.7083164489 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.065505027771
+INFO:root:sl:-0.0489422595963 sr:0.0895090228505 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.914533812 Distance_optical:13.8327213031 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0625410079956
+INFO:root:sl:-0.101916959788 sr:0.14876828211 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9172863504 Distance_optical:14.0394844796 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0634670257568
+INFO:root:sl:-0.0487778868088 sr:0.0895090228505 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9189036276 Distance_optical:14.1638849191 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636291503906
+INFO:root:sl:-0.0499092765484 sr:0.0819465819527 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.9203594778 Distance_optical:14.2777735326 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0656747817993
+INFO:root:sl:-0.0501510307864 sr:0.0800559717282 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.38
+INFO:root:Angle_optical:67.921759416 Distance_optical:14.3890332173 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0655760765076
+INFO:root:sl:-0.0414739700451 sr:0.0598112212384 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9227912415 Distance_optical:14.4721563861 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0679681301117
+INFO:root:sl:-0.0778476790396 sr:0.119070480498 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9248103704 Distance_optical:14.6376333338 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0714452266693
+INFO:root:sl:-0.103077390729 sr:0.158412321201 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9274266834 Distance_optical:14.8577804011 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639319419861
+INFO:root:sl:-0.0558596421904 sr:0.0991530619415 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9290250563 Distance_optical:14.9955715113 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0638329982758
+INFO:root:sl:-0.115114689059 sr:0.158412321201 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9315184182 Distance_optical:15.2157095191 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631749629974
+INFO:root:sl:-0.0677475610116 sr:0.104239734666 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9331199907 Distance_optical:15.3605633863 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0641150474548
+INFO:root:sl:-0.0625771621549 sr:0.0909575467308 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9344929216 Distance_optical:15.4869579994 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0664460659027
+INFO:root:sl:-0.0630836687755 sr:0.0889357523322 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9358137548 Distance_optical:15.6105412829 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.066663980484
+INFO:root:sl:-0.0511074235098 sr:0.0718921238431 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.936866215 Distance_optical:15.7104397497 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633718967438
+INFO:root:sl:-0.110366682769 sr:0.131151383102 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9387519738 Distance_optical:15.8926794319 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631890296936
+INFO:root:sl:-0.0585716292008 sr:0.0736916842746 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.939792615 Distance_optical:15.995074961 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633938312531
+INFO:root:sl:-0.0798258141159 sr:0.116365583006 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9414089038 Distance_optical:16.1567637759 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0620520114899
+INFO:root:sl:-0.110276864115 sr:0.158037564432 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9435526756 Distance_optical:16.3763501685 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0675659179688
+INFO:root:sl:-0.0510176048555 sr:0.0987783051731 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9448635141 Distance_optical:16.5135952824 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0693418979645
+INFO:root:sl:-0.0939283995557 sr:0.145515635743 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.39
+INFO:root:Angle_optical:67.9467551864 Distance_optical:16.7157740651 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064071893692
+INFO:root:sl:-0.0346691402964 sr:0.0862563764842 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9478549503 Distance_optical:16.8356158088 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0646271705627
+INFO:root:sl:-0.0939283995557 sr:0.145515635743 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9496750285 Distance_optical:17.0377861611 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0673370361328
+INFO:root:sl:-0.0579577393674 sr:0.0948732495909 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9508384834 Distance_optical:17.169594248 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0643048286438
+INFO:root:sl:-0.107600603704 sr:0.15413250885 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9526908391 Distance_optical:17.3837267308 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0632319450378
+INFO:root:sl:-0.0671066580844 sr:0.0991275566046 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9538580982 Distance_optical:17.5214389461 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0624778270721
+INFO:root:sl:-0.0570015703974 sr:0.0868695254117 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9548659506 Distance_optical:17.642119674 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0643360614777
+INFO:root:sl:-0.0925379435941 sr:0.139991012464 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9564612551 Distance_optical:17.836593558 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0668680667877
+INFO:root:sl:-0.0846183203551 sr:0.128129298889 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9578910232 Distance_optical:18.0145847214 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.067097902298
+INFO:root:sl:-0.0585394585867 sr:0.0887474591912 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9588647909 Distance_optical:18.1378659131 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631630420685
+INFO:root:sl:-0.111566483033 sr:0.14800671845 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9604594788 Distance_optical:18.3434607961 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636229515076
+INFO:root:sl:-0.128611391714 sr:0.196981510028 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9625268709 Distance_optical:18.6170768433 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0623950958252
+INFO:root:sl:-0.069352132455 sr:0.137722250768 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9639363559 Distance_optical:18.8083727639 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0637989044189
+INFO:root:sl:-0.0780481233203 sr:0.121548528369 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9651565508 Distance_optical:18.9771989997 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0679569244385
+INFO:root:sl:-0.070696551287 sr:0.114287368582 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9662840788 Distance_optical:19.13593595 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0693831443787
+INFO:root:sl:-0.0554734095976 sr:0.0941884552128 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9671992529 Distance_optical:19.2667541519 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0634961128235
+INFO:root:sl:-0.114133237468 sr:0.153447714472 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9686637008 Distance_optical:19.4798719811 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0625419616699
+INFO:root:sl:-0.0857405288311 sr:0.13784694296 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9699520053 Distance_optical:19.6713166472 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0643692016602
+INFO:root:sl:-0.0650899116606 sr:0.0960666476639 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9708349961 Distance_optical:19.8047326874 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0624580383301
+INFO:root:sl:-0.118873962753 sr:0.155325906923 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.972237575 Distance_optical:20.020441397 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0640258789062
+INFO:root:sl:-0.107723053702 sr:0.162339391494 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9736712889 Distance_optical:20.2458823752 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0655808448792
+INFO:root:sl:-0.072921732029 sr:0.10343298652 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9745680951 Distance_optical:20.389515787 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063894033432
+INFO:root:sl:-0.0769776864096 sr:0.106001902671 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9754740496 Distance_optical:20.5367131776 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0662639141083
+INFO:root:sl:-0.0666104137208 sr:0.0934308115955 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.976261772 Distance_optical:20.6664511242 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0648069381714
+INFO:root:sl:-0.0559472073744 sr:0.0757692260599 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9768932992 Distance_optical:20.7716622326 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064649105072
+INFO:root:sl:-0.115206466634 sr:0.135028485319 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9780028878 Distance_optical:20.9591547378 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0648171901703
+INFO:root:sl:-0.0614998469196 sr:0.0765668234592 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9786232161 Distance_optical:21.065468335 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0645480155945
+INFO:root:sl:-0.103298667703 sr:0.0917955699135 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9793586449 Distance_optical:21.1929247292 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0667679309845
+INFO:root:sl:-0.0707693094444 sr:0.0762865158295 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9799630618 Distance_optical:21.298845072 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0700089931488
+INFO:root:sl:-0.060651049951 sr:0.0613302488321 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.980444597 Distance_optical:21.3839979808 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0652039051056
+INFO:root:sl:-0.105180881299 sr:0.120589508091 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9813802032 Distance_optical:21.5514248654 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0653738975525
+INFO:root:sl:-0.0629529053272 sr:0.0658567965639 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9818849886 Distance_optical:21.642858695 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063591003418
+INFO:root:sl:-0.0580081633546 sr:0.0619848518526 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.4
+INFO:root:Angle_optical:67.9823561762 Distance_optical:21.72891554 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0661239624023
+INFO:root:sl:-0.0565354874952 sr:0.062107789127 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.982824532 Distance_optical:21.8151418161 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0854380130768
+INFO:root:sl:-0.0944420599407 sr:0.121367048386 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9837290497 Distance_optical:21.9836360331 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0659880638123
+INFO:root:sl:-0.0522464276976 sr:0.062107789127 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9841865254 Distance_optical:22.0698585863 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.068578004837
+INFO:root:sl:-0.111505686957 sr:0.121367048386 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9850701473 Distance_optical:22.2383454859 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0653200149536
+INFO:root:sl:-0.0654062511467 sr:0.0756422776493 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.985614053 Distance_optical:22.3433528439 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0622470378876
+INFO:root:sl:-0.11815318441 sr:0.134901536909 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9865713412 Distance_optical:22.5306197522 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0650689601898
+INFO:root:sl:-0.0737662806284 sr:0.082977715736 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9871522157 Distance_optical:22.6458042874 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0679199695587
+INFO:root:sl:-0.0601101485178 sr:0.102998498964 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9878649821 Distance_optical:22.7887771992 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639231204987
+INFO:root:sl:-0.118375683314 sr:0.162257758223 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.98896966 Distance_optical:23.0140009639 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0640771389008
+INFO:root:sl:-0.0651627933811 sr:0.102998498964 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9896596098 Distance_optical:23.1569645415 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639290809631
+INFO:root:sl:-0.061240348897 sr:0.0929543015481 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9902749163 Distance_optical:23.2859834654 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0628938674927
+INFO:root:sl:-0.0625663599108 sr:0.0898595257306 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9908632107 Distance_optical:23.4107040423 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0642747879028
+INFO:root:sl:-0.0472423755472 sr:0.0714530815606 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9913264909 Distance_optical:23.5098753731 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0696129798889
+INFO:root:sl:-0.0866389096708 sr:0.13071234082 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.41
+INFO:root:Angle_optical:67.9921638257 Distance_optical:23.6912893166 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0655670166016
+INFO:root:sl:-0.102098590369 sr:0.158590530163 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9931624672 Distance_optical:23.9113869214 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0659010410309
+INFO:root:sl:-0.0558740491685 sr:0.0993312709035 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9937785216 Distance_optical:24.0492378448 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0665209293365
+INFO:root:sl:-0.0635516310685 sr:0.0981361141453 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9943801743 Distance_optical:24.1854266658 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0643198490143
+INFO:root:sl:-0.117768373178 sr:0.157395373405 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9953309194 Distance_optical:24.4038455193 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.06427693367
+INFO:root:sl:-0.0592985133537 sr:0.0981361141453 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9959150239 Distance_optical:24.5400252525 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0642318725586
+INFO:root:sl:-0.0866677209556 sr:0.12744842035 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9966638504 Distance_optical:24.7168752872 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0705120563507
+INFO:root:sl:-0.0636490375571 sr:0.0982036572526 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9972334733 Distance_optical:24.8531406077 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.063294172287
+INFO:root:sl:-0.0524038179666 sr:0.0809470479369 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9976982562 Distance_optical:24.9654583346 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0620248317719
+INFO:root:sl:-0.0493368909722 sr:0.0775564039969 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9981396058 Distance_optical:25.0730690994 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639290809631
+INFO:root:sl:-0.00163482144313 sr:0.0182971447376 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9982431691 Distance_optical:25.098456356 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.062371969223
+INFO:root:sl:-0.0281893651211 sr:0.0426719880093 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9984838713 Distance_optical:25.1576631783 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0664689540863
+INFO:root:sl:-0.00726966158001 sr:0.0153436580891 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9985701402 Distance_optical:25.1789521352 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0691409111023
+INFO:root:sl:-0.0111112842233 sr:0.019600914023 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.99868013 Distance_optical:25.2061478038 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0624580383301
+INFO:root:sl:-0.0127516196058 sr:0.0198233625286 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9987911231 Distance_optical:25.2336519659 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633089542389
+INFO:root:sl:-0.056042880393 sr:0.0790826217879 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9992314804 Distance_optical:25.3433746249 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0648720264435
+INFO:root:sl:-0.0199764460555 sr:0.0296267245849 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.43
+INFO:root:Angle_optical:67.9993954559 Distance_optical:25.3844794191 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0634200572968
+INFO:root:sl:-0.0247276099969 sr:0.0323626416905 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9995739586 Distance_optical:25.4293797075 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0675919055939
+INFO:root:sl:-0.0601469058461 sr:0.0916219009498 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0000758619 Distance_optical:25.5564947935 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0641260147095
+INFO:root:sl:-0.0606335413085 sr:0.0927958672503 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0005790513 Distance_optical:25.6852353642 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636579990387
+INFO:root:sl:-0.0335923086607 sr:0.0523807268835 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0008608307 Distance_optical:25.7579044368 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.068578004837
+INFO:root:sl:-0.0928515679199 sr:0.111639986143 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0014560317 Distance_optical:25.9127818182 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0670139789581
+INFO:root:sl:-0.0467693544723 sr:0.0642041450692 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0017950668 Distance_optical:26.0018496053 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0641148090363
+INFO:root:sl:-0.0455047144543 sr:0.0576367887379 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0020974166 Distance_optical:26.0818054059 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0635130405426
+INFO:root:sl:-0.0479252636912 sr:0.0589492488479 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0024047072 Distance_optical:26.1635805611 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0626389980316
+INFO:root:sl:0.0113339955681 sr:0.0244189889356 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9680538116 Distance_optical:26.197486566 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0629868507385
+INFO:root:sl:-0.0228753125142 sr:0.0359053622497 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9683049593 Distance_optical:26.2472938788 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0648641586304
+INFO:root:sl:-0.0821345717735 sr:0.095164621509 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9689659584 Distance_optical:26.3793021936 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0634610652924
+INFO:root:sl:-0.0250282263089 sr:0.0397572992252 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9692401247 Distance_optical:26.4344507743 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0629909038544
+INFO:root:sl:-0.0325095276491 sr:0.042706820746 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9695333418 Distance_optical:26.4936900336 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0635011196136
+INFO:root:sl:-0.0917687869084 sr:0.101966080005 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9702280737 Distance_optical:26.6351257676 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0635740756989
+INFO:root:sl:-0.100342905985 sr:0.143402087179 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9711925574 Distance_optical:26.8340298219 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0644478797913
+INFO:root:sl:-0.0561553051357 sr:0.0841428279195 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.971751757 Distance_optical:26.9507352437 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0684099197388
+INFO:root:sl:-0.114274789166 sr:0.143402087179 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.972693544 Distance_optical:27.1496262183 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0679831504822
+INFO:root:sl:-0.0550155299063 sr:0.0841428279195 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9732396575 Distance_optical:27.2663239205 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0630390644073
+INFO:root:sl:-0.0588682872844 sr:0.0784211702563 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9737443806 Distance_optical:27.3750836645 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0644679069519
+INFO:root:sl:-0.0590506099891 sr:0.07658043204 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9742333424 Distance_optical:27.4812881276 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0663690567017
+INFO:root:sl:-0.0464042704635 sr:0.0610829484663 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9746206109 Distance_optical:27.5659984084 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639579296112
+INFO:root:sl:-0.105663529723 sr:0.120342207726 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9753765559 Distance_optical:27.7328853748 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0659391880035
+INFO:root:sl:-0.0531198308491 sr:0.0647334906788 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9757793775 Distance_optical:27.8226533656 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.067804813385
+INFO:root:sl:-0.0956479209969 sr:0.123992749938 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9765436271 Distance_optical:27.9945931998 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0773451328278
+INFO:root:sl:-0.154907180256 sr:0.171921394676 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.977587642 Distance_optical:28.2329847119 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631899833679
+INFO:root:sl:-0.0956479209969 sr:0.112662135417 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9782621303 Distance_optical:28.3891987674 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631489753723
+INFO:root:sl:-0.14482420065 sr:0.171921394676 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9792769667 Distance_optical:28.6275696367 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0638108253479
+INFO:root:sl:-0.101132304879 sr:0.115223052101 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9799475496 Distance_optical:28.787320591 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0640091896057
+INFO:root:sl:-0.0854011066316 sr:0.0999516455486 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9805231502 Distance_optical:28.9258938979 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0643360614777
+INFO:root:sl:-0.0849068232301 sr:0.0973144991793 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9810781961 Distance_optical:29.0608069188 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.062668800354
+INFO:root:sl:-0.0648023029151 sr:0.0671162794152 heading:337 velocity:[0.0, -0.01, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9814579553 Distance_optical:29.1538519189 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0671119689941
+INFO:root:sl:-0.0568885671935 sr:0.069085069998 heading:337 velocity:[0.0, -0.01, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9818462848 Distance_optical:29.2496242593 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0770289897919
+INFO:root:sl:-0.0540594428511 sr:0.0590845178926 heading:337 velocity:[0.0, -0.01, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.982176352 Distance_optical:29.3315312267 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0655109882355
+INFO:root:sl:-0.0454669018008 sr:0.0489255968103 heading:337 velocity:[0.0, -0.01, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.98244825 Distance_optical:29.3993540537 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0635759830475
+INFO:root:sl:-0.0391037279614 sr:0.0442737961752 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.982693197 Distance_optical:29.4607274452 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0634560585022
+INFO:root:sl:-0.0647965576313 sr:0.0860685924079 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9831664123 Distance_optical:29.5800353155 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0625441074371
+INFO:root:sl:-0.0395311262619 sr:0.0454695996042 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9834148426 Distance_optical:29.6430637393 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0649650096893
+INFO:root:sl:-0.0358578529636 sr:0.0439529970468 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9836539654 Distance_optical:29.7039890319 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0652649402618
+INFO:root:sl:-0.0774754178761 sr:0.103212256306 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9842115716 Distance_optical:29.8470529745 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0811161994934
+INFO:root:sl:-0.103706513375 sr:0.150077489582 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9850127124 Distance_optical:30.0550690099 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636610984802
+INFO:root:sl:-0.0555396105639 sr:0.0908182303229 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9854920469 Distance_optical:30.1809434086 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636079311371
+INFO:root:sl:-0.0591803854538 sr:0.0860269940528 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9859423466 Distance_optical:30.3001737163 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0632710456848
+INFO:root:sl:-0.0467754198556 sr:0.0850895886945 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9863841962 Distance_optical:30.4181015277 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0620319843292
+INFO:root:sl:-0.0427321152034 sr:0.0662799175362 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9867259566 Distance_optical:30.5099582679 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636038780212
+INFO:root:sl:-0.100653795192 sr:0.125539176795 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9873675515 Distance_optical:30.6839364038 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0623190402985
+INFO:root:sl:-0.0648237659213 sr:0.102525622621 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9878860452 Distance_optical:30.8260159244 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0800530910492
+INFO:root:sl:-0.124083025181 sr:0.161784881881 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9886943676 Distance_optical:31.0502068181 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0680649280548
+INFO:root:sl:-0.0650754516562 sr:0.102525622621 heading:337 velocity:[0.0, 0.0, 0.22] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9892004685 Distance_optical:31.1922738501 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0663220882416
+INFO:root:sl:-0.0624954047626 sr:0.0939311418852 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9896600253 Distance_optical:31.322427452 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0630090236664
+INFO:root:sl:-0.0660197788592 sr:0.0978794857915 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9901347629 Distance_optical:31.4580476092 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0645270347595
+INFO:root:sl:-0.0443296149851 sr:0.0770142710546 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9905053668 Distance_optical:31.5647541238 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639870166779
+INFO:root:sl:-0.045606678705 sr:0.0682910756805 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9908318558 Distance_optical:31.6593719517 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0622310638428
+INFO:root:sl:-0.0697738594636 sr:0.108032163368 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9913442823 Distance_optical:31.8090468788 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0688691139221
+INFO:root:sl:-0.0448742007274 sr:0.0590960960556 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9916225086 Distance_optical:31.8909201934 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0644190311432
+INFO:root:sl:-0.0566115920549 sr:0.0931732461348 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9920582129 Distance_optical:32.0200015338 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0659289360046
+INFO:root:sl:-0.0448855438889 sr:0.0657206253825 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.992363384 Distance_optical:32.1110477823 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0664350986481
+INFO:root:sl:-0.0824570053119 sr:0.124979884642 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9929388597 Distance_optical:32.2841833044 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0740370750427
+INFO:root:sl:-0.0475382900462 sr:0.0713415416756 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.993264529 Distance_optical:32.3830098846 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0625138282776
+INFO:root:sl:-0.0457266919568 sr:0.0657464366866 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:67.9935628587 Distance_optical:32.474083617 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0646438598633
+INFO:root:sl:-0.0248022779384 sr:0.0608171898874 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9938372985 Distance_optical:32.5583273632 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0641269683838
+INFO:root:sl:-0.0295168149854 sr:0.0494762920624 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9940594905 Distance_optical:32.6268604171 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0626468658447
+INFO:root:sl:-0.084088566284 sr:0.108735551322 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9945444612 Distance_optical:32.7774734108 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0628399848938
+INFO:root:sl:-0.0449205562638 sr:0.0697754184765 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9948532657 Distance_optical:32.874118475 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0679709911346
+INFO:root:sl:-0.0797480137037 sr:0.121520609273 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9953866547 Distance_optical:33.0424294657 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0830299854279
+INFO:root:sl:-0.0454404592632 sr:0.0771818671321 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9957225422 Distance_optical:33.1493257234 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0622229576111
+INFO:root:sl:-0.0448346646208 sr:0.0675622980663 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9960147465 Distance_optical:33.2428965433 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636129379272
+INFO:root:sl:-0.0425057843969 sr:0.0665661936178 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9963009957 Distance_optical:33.3350855927 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0628621578217
+INFO:root:sl:-0.0337319447848 sr:0.0524238140812 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9965252877 Distance_optical:33.4076869884 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0682640075684
+INFO:root:sl:-0.0667597942326 sr:0.103315090455 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9969643964 Distance_optical:33.5507633743 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0647799968719
+INFO:root:sl:-0.0357493808536 sr:0.0555762745385 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9971990183 Distance_optical:33.6277262339 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0700600147247
+INFO:root:sl:-0.0778333250681 sr:0.114835533798 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.997680331 Distance_optical:33.7867473033 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064110994339
+INFO:root:sl:-0.0751859889661 sr:0.116058974355 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9981620623 Distance_optical:33.9474558201 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0698461532593
+INFO:root:sl:-0.047192173722 sr:0.0716176956729 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9984569962 Distance_optical:34.0466224704 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.062488079071
+INFO:root:sl:-0.0834211819215 sr:0.130876954932 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9989914286 Distance_optical:34.2278367327 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0620648860931
+INFO:root:sl:-0.0533912973119 sr:0.0801338452972 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9993157883 Distance_optical:34.3387869937 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0654680728912
+INFO:root:sl:-0.0150607391307 sr:0.0646909231728 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9995760698 Distance_optical:34.4283531808 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0646810531616
+INFO:root:sl:-0.0324165675703 sr:0.0720111116997 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9998641687 Distance_optical:34.5280518279 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633897781372
+INFO:root:sl:-0.0119448282415 sr:0.0292964847384 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:67.9999808871 Distance_optical:34.568611749 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0697360038757
+INFO:root:sl:-0.0605655117926 sr:0.0885557439977 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.000331988 Distance_optical:34.6912112794 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0781910419464
+INFO:root:sl:-0.0286910324746 sr:0.0480455572121 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0005214087 Distance_optical:34.7577254605 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0647029876709
+INFO:root:sl:-0.0260876420733 sr:0.0412376223272 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0006833943 Distance_optical:34.8148137969 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0627059936523
+INFO:root:sl:-0.0311735598673 sr:0.0415331486596 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0008459883 Distance_optical:34.8723103619 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064346075058
+INFO:root:sl:-0.0689912895182 sr:0.100792407919 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0012382819 Distance_optical:35.011838972 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0646729469299
+INFO:root:sl:-0.0334541832023 sr:0.047130548813 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0014206146 Distance_optical:35.0770807612 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0633900165558
+INFO:root:sl:-0.0927134424616 sr:0.106389808072 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0018296414 Distance_optical:35.2243495823 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.067962884903
+INFO:root:sl:-0.0334541832023 sr:0.0481292996831 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0020135229 Distance_optical:35.2909700429 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0752840042114
+INFO:root:sl:-0.0415934727827 sr:0.0505259622191 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0022057918 Distance_optical:35.3609066491 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0640959739685
+INFO:root:sl:-0.0374778985197 sr:0.055463235735 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.44
+INFO:root:Angle_optical:68.0024159472 Distance_optical:35.4376757428 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0632569789886
+INFO:root:sl:-0.0323967173401 sr:0.0338843415683 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0025438764 Distance_optical:35.484575746 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.06418800354
+INFO:root:sl:-0.0693849379016 sr:0.0931436008276 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0028937447 Distance_optical:35.6134945636 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0647490024567
+INFO:root:sl:-0.0348148884403 sr:0.0456227945327 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0030641617 Distance_optical:35.6766387896 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0629329681396
+INFO:root:sl:-0.0344133185718 sr:0.0431393768355 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0032247301 Distance_optical:35.7363448252 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0666768550873
+INFO:root:sl:-0.0857085051869 sr:0.102398636095 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0036036564 Distance_optical:35.8780632739 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0671079158783
+INFO:root:sl:-0.0841525469241 sr:0.119379073536 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0040415321 Distance_optical:36.0432753704 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0710320472717
+INFO:root:sl:-0.0527717495169 sr:0.0664681634536 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.00428354 Distance_optical:36.1352592432 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631501674652
+INFO:root:sl:-0.0574715057242 sr:0.0725010990717 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.004546065 Distance_optical:36.2355892583 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636909008026
+INFO:root:sl:-0.045371777644 sr:0.0632620216877 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0047739102 Distance_optical:36.3231315419 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0701529979706
+INFO:root:sl:-0.041287591264 sr:0.0512323450058 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0049575982 Distance_optical:36.3940255176 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0644021034241
+INFO:root:sl:-0.00834966366723 sr:0.00546528671642 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0049771497 Distance_optical:36.4015881542 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0695641040802
+INFO:root:sl:-0.0245155638904 sr:0.0300435417743 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0050844774 Distance_optical:36.4431608698 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0651760101318
+INFO:root:sl:-0.0837748231497 sr:0.0893028010336 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0054020122 Distance_optical:36.5667306246 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0686938762665
+INFO:root:sl:-0.0308173705998 sr:0.0326619923017 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0055175946 Distance_optical:36.6119244779 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0638420581818
+INFO:root:sl:-0.040122251975 sr:0.03465102722 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0056398931 Distance_optical:36.6598698905 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636620521545
+INFO:root:sl:-0.0993815112343 sr:0.0939102864793 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.005969684 Distance_optical:36.78980697 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0681710243225
+INFO:root:sl:-0.040122251975 sr:0.0444991421841 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0061251135 Distance_optical:36.8513756291 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0632128715515
+INFO:root:sl:-0.0750498922865 sr:0.0908044540099 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0064406176 Distance_optical:36.97700858 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0626831054688
+INFO:root:sl:-0.0562651140904 sr:0.0548820765454 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0066302328 Distance_optical:37.0529387503 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0680911540985
+INFO:root:sl:-0.0385880287538 sr:0.0503697667456 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0068035507 Distance_optical:37.1226246121 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0782392024994
+INFO:root:sl:-0.0424757587827 sr:0.0490140743252 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0069715573 Distance_optical:37.1904335478 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0638978481293
+INFO:root:sl:-0.0362886181617 sr:0.039165671986 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0071053504 Distance_optical:37.2446166729 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0658102035522
+INFO:root:sl:-0.0742293175526 sr:0.0984249312453 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0074398021 Distance_optical:37.380777323 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.064728975296
+INFO:root:sl:-0.0382484236242 sr:0.0466511693891 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0075974432 Distance_optical:37.4453124812 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0640408992767
+INFO:root:sl:-0.0748817851097 sr:0.105444426365 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0079516858 Distance_optical:37.5911751542 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0625910758972
+INFO:root:sl:-0.113871350933 sr:0.164703685625 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0084993354 Distance_optical:37.8189995006 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0654399394989
+INFO:root:sl:-0.0546120916739 sr:0.105444426365 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0088463604 Distance_optical:37.9648462017 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0826239585876
+INFO:root:sl:-0.0631831047538 sr:0.0946821096286 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.009155613 Distance_optical:38.09580153 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631721019745
+INFO:root:sl:-0.0579166368402 sr:0.0912075554047 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0094514338 Distance_optical:38.2219463823 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0649969577789
+INFO:root:sl:-0.0579305216042 sr:0.0943869321567 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0097554358 Distance_optical:38.3524835022 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0642528533936
+INFO:root:sl:-0.107188518546 sr:0.153646191416 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.010245721 Distance_optical:38.5649653002 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639221668243
+INFO:root:sl:-0.0557589192475 sr:0.0943869321567 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0105441308 Distance_optical:38.6954890342 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0643301010132
+INFO:root:sl:-0.105589082748 sr:0.153646191416 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.45
+INFO:root:Angle_optical:68.0110254326 Distance_optical:38.9079489463 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0639290809631
+INFO:root:sl:-0.0680032293916 sr:0.100399872986 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0113369902 Distance_optical:39.0467731852 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.068265914917
+INFO:root:sl:-0.111089081464 sr:0.159659132246 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0118277092 Distance_optical:39.2675239318 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0730290412903
+INFO:root:sl:-0.135640220079 sr:0.207356968381 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0124565005 Distance_optical:39.5542012869 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0636670589447
+INFO:root:sl:-0.0798016089408 sr:0.148097709122 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0128997985 Distance_optical:39.7589354399 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0623140335083
+INFO:root:sl:-0.0833232266424 sr:0.129824789013 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0132844948 Distance_optical:39.9383979721 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0630209445953
+INFO:root:sl:-0.0752483495023 sr:0.120861572346 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0136393964 Distance_optical:40.1054612645 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.062842130661
+INFO:root:sl:-0.104906409294 sr:0.171273398991 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0141370631 Distance_optical:40.342192381 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0629789829254
+INFO:root:sl:-0.0658694963598 sr:0.112014139731 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0144592472 Distance_optical:40.4970068748 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0629179477692
+INFO:root:sl:-0.0859589340976 sr:0.139532863077 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0148569913 Distance_optical:40.6898443725 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0866601467133
+INFO:root:sl:-0.101141623162 sr:0.133980669302 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0152352075 Distance_optical:40.87499754 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.066822052002
+INFO:root:sl:-0.0418823639026 sr:0.0747214100431 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.015444583 Distance_optical:40.97825327 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0655920505524
+INFO:root:sl:-0.0777276957609 sr:0.12626304351 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0157958773 Distance_optical:41.1527254225 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0632908344269
+INFO:root:sl:-0.106024287679 sr:0.16611146307 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0162533036 Distance_optical:41.3822458632 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0623700618744
+INFO:root:sl:-0.0570195705486 sr:0.106852203811 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0165447391 Distance_optical:41.5298773177 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0631608963013
+INFO:root:sl:-0.0630148825694 sr:0.100555171746 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0168170173 Distance_optical:41.6688020986 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0619490146637
+INFO:root:sl:-0.0583852942392 sr:0.0890798199774 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0170566331 Distance_optical:41.7918675633 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0716660022736
+INFO:root:sl:-0.0435249913901 sr:0.0737700626799 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.017253946 Distance_optical:41.8937785797 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0653381347656
+INFO:root:sl:-0.0429672580977 sr:0.0661074138215 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0174299072 Distance_optical:41.985101012 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.068038225174
+INFO:root:sl:-0.101724122788 sr:0.125366673081 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0177613973 Distance_optical:42.1582781769 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0658252239227
+INFO:root:sl:-0.0495399906649 sr:0.0666430950832 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0179364474 Distance_optical:42.2503326293 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0697529315948
+INFO:root:sl:0.00971926859435 sr:0.048670096667 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:67.9997605938 Distance_optical:42.3175810513 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0654468536377
+INFO:root:sl:-0.0495399906649 sr:0.107929355926 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0001057001 Distance_optical:42.4666551392 Angle_gps:46.129258423 Distance_gps:0.139913139508                  elapsed_time:0.0638608932495
+INFO:root:sl:-0.0223401781839 sr:0.0558106369191 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0002831638 Distance_optical:42.5437389777 Angle_gps:46.1285935014 Distance_gps:0.14339035613                  elapsed_time:0.0683200359344
+INFO:root:sl:-0.0180015409129 sr:0.0538886964629 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.000453879 Distance_optical:42.6181664276 Angle_gps:46.1279600636 Distance_gps:0.14686757276                  elapsed_time:0.0648238658905
+INFO:root:sl:-0.0446123137687 sr:0.0826618813854 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0007145362 Distance_optical:42.732329897 Angle_gps:46.1273559252 Distance_gps:0.150344789397                  elapsed_time:0.0705530643463
+INFO:root:sl:-0.0158215743137 sr:0.0527461734835 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0008800999 Distance_optical:42.8051748269 Angle_gps:46.126779099 Distance_gps:0.153822006039                  elapsed_time:0.0657720565796
+INFO:root:sl:-0.0222901363876 sr:0.048622515673 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0010321983 Distance_optical:42.8723232268 Angle_gps:46.1262277739 Distance_gps:0.157299222686                  elapsed_time:0.0727558135986
+INFO:root:sl:-0.0756369898722 sr:0.107881774932 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.001367893 Distance_optical:43.021304148 Angle_gps:46.1257002951 Distance_gps:0.160776439335                  elapsed_time:0.0631182193756
+INFO:root:sl:-0.0244666428213 sr:0.0553608001592 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.46
+INFO:root:Angle_optical:68.0015392149 Distance_optical:43.0977525738 Angle_gps:46.1251951482 Distance_gps:0.164253655985                  elapsed_time:0.0636157989502
+INFO:root:sl:-0.0328983168221 sr:0.0534003096366 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0017038673 Distance_optical:43.171491876 Angle_gps:46.1247109443 Distance_gps:0.167730872636                  elapsed_time:0.0641300678253
+INFO:root:sl:-0.0609408134919 sr:0.0733274324938 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.001929004 Distance_optical:43.2727451218 Angle_gps:46.1242464073 Distance_gps:0.171208089287                  elapsed_time:0.0630309581757
+INFO:root:sl:-0.0317585632208 sr:0.0465383655051 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0020713184 Distance_optical:43.3370052367 Angle_gps:46.1238003627 Distance_gps:0.174685305937                  elapsed_time:0.0647909641266
+INFO:root:sl:-0.0296758900594 sr:0.0420743334234 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0021996013 Distance_optical:43.3951002229 Angle_gps:46.1233717278 Distance_gps:0.178162522584                  elapsed_time:0.0680551528931
+INFO:root:sl:-0.0322231680571 sr:0.0408873819264 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0023239205 Distance_optical:43.4515552095 Angle_gps:46.1229595026 Distance_gps:0.181639739229                  elapsed_time:0.0875680446625
+INFO:root:sl:-0.0265213474275 sr:0.0296587166305 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0024138869 Distance_optical:43.492505615 Angle_gps:46.1225627625 Distance_gps:0.185116955869                  elapsed_time:0.0651659965515
+INFO:root:sl:-0.0222866453644 sr:0.02973939779 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0025039196 Distance_optical:43.5335668485 Angle_gps:46.1221806509 Distance_gps:0.188594172505                  elapsed_time:0.0664069652557
+INFO:root:sl:-0.0583123038172 sr:0.0859736286517 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0027631958 Distance_optical:43.6522675577 Angle_gps:46.1218123732 Distance_gps:0.192071389135                  elapsed_time:0.06560587883
+INFO:root:sl:-0.0268451886798 sr:0.0382959585278 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0028782115 Distance_optical:43.7051398751 Angle_gps:46.1214571915 Distance_gps:0.19554860576                  elapsed_time:0.0655679702759
+INFO:root:sl:-0.0861044479391 sr:0.0975552177871 heading:337 velocity:[0.01, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0031698867 Distance_optical:43.8398226442 Angle_gps:46.1211144194 Distance_gps:0.199025822378                  elapsed_time:0.07062292099
+INFO:root:sl:-0.0967192045009 sr:0.142022807461 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0035911638 Distance_optical:44.0358853991 Angle_gps:46.1211144194 Distance_gps:0.199025822378                  elapsed_time:0.0661690235138
+INFO:root:sl:-0.0524172102799 sr:0.0827635482018 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0038348492 Distance_optical:44.1501345598 Angle_gps:46.1211144194 Distance_gps:0.199025822378                  elapsed_time:0.0708451271057
+INFO:root:sl:-0.0572649764755 sr:0.0797104123588 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0040682948 Distance_optical:44.2601648429 Angle_gps:46.1211144194 Distance_gps:0.199025822378                  elapsed_time:0.0670948028564
+INFO:root:sl:-0.0916880101329 sr:0.126376946486 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0044359194 Distance_optical:44.4346039005 Angle_gps:46.1211144194 Distance_gps:0.199025822378                  elapsed_time:0.0631320476532
+INFO:root:sl:-0.100569548032 sr:0.15309155926 heading:337 velocity:[0.0, 0.0, 0.21] position:LocationGlobalRelative:lat=0.0,lon=0.0,alt=1.47
+INFO:root:Angle_optical:68.0048772069 Distance_optical:44.6459032341 Angle_gps:46.1211144194 Distance_gps:0.199025822378                  elapsed_time:0.0676798820496
