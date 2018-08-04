@@ -167,7 +167,7 @@ while drone.mode.name == "GUIDED":
             print "rotating"
             condition_yaw(drone, heading, relative=True)
     if (frame_num+1) % 10 == 0:
-       send_ned_velocity(drone, 3*np.cos(drone_heading), 3*np.sin(drone_heading), 0, 1)
+       send_ned_velocity(drone, 1.5*np.cos(drone_heading), 1.5*np.sin(drone_heading), 0, 1)
 
     elapsed_time = time.time() - start_time
     start_time = time.time()

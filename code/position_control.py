@@ -11,7 +11,7 @@ from CX_model.central_complex import update_cells
 from CX_model.drone_basic import arm, arm_and_takeoff
 from CX_model.video_threading import picameraThread
 
-resolution = FRAME_DIM['medium']
+resolution = FRAME_DIM['large']
 print "Resolution: ", resolution
 # command line arguments halder
 parser = argparse.ArgumentParser(description='CX model navigation.')

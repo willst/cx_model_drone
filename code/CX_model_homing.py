@@ -71,6 +71,7 @@ except dronekit.APIException:
 except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
+add_3wayP_mission(drone, drone.headind, 3)
 state = arm_and_takeoff(drone, 3)
 
 # set to mission mode.

@@ -7,8 +7,8 @@ from dronekit import connect, VehicleMode, LocationGlobalRelative, LocationGloba
 from CX_model.drone_basic import arm, arm_and_takeoff, download_mission, adds_square_mission, PX4setMode
 from pymavlink import mavutil
 
-connection_string = "127.0.0.1:14550"
-#connection_string = '/dev/ttyAMA0'
+#connection_string = "127.0.0.1:14550"
+connection_string = '/dev/ttyAMA0'
 
 # Try to connect to PX4
 try:

@@ -14,8 +14,8 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 from CX_model.video_threading import picameraThread
 
-resolution = FRAME_DIM['medium']
-#resolution = FRAME_DIM['large']
+#resolution = FRAME_DIM['medium']
+resolution = FRAME_DIM['large']
 print "Resolution: ", resolution
 
 # command line arguments halder
@@ -76,11 +76,13 @@ if RECORDING == 'true':
     out = cv2.VideoWriter(fname,fourcc, 20.0, (fw,fh), False)
 
 # upload mission, arm and takeoff
-#home=drone.home_location
-home=LocationGlobalRelative(55.940784, -3.192819, 0)
-adds_3wayP_mission(drone, home, drone.heading, 2.5)
+cmds=drone.commands
+cmds.download()
+cmds.wait_ready()
+home=drone.home_location
+adds_3wayP_mission(drone, home, drone.heading, 3)
 #adds_10wayP_mission(drone, home, drone.heading, 2.5)
-state = arm_and_takeoff(drone, 2.5)
+state = arm_and_takeoff(drone, 3)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
