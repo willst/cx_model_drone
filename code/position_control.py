@@ -23,7 +23,7 @@ RECORDING = args.recording
 
 # initialize logger
 time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
-fname = 'log/' + time_string + '.log'
+fname = 'log_pos/' + time_string + '.log'
 logging.basicConfig(filename=fname,level=logging.DEBUG)
 logging.info("Resolution: {}*{}".format(resolution[0],resolution[1]))
 

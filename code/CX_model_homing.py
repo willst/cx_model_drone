@@ -133,13 +133,19 @@ while drone.mode.name == "AUTO":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     # moniter the mission
-    if frame_num%10==0:
-        display_seq = drone.commands.next+1
-        print "Moving to waypoint: ", display_seq
-        nextwaypoint = drone.commands.next
+    if nextwaypoint < len(drone.commands):
+        if frame_num%40==0:
+            display_seq = drone.commands.next
+            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
+                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
+            print "Moving to waypoint %s" % display_seq
+            nextwaypoint = drone.commands.next
+    else:
+        break
 
     prvs = next
-    #print('Elapsed time:%.5f'%elapsed_time)
+    if elapsed_time>0.1:
+        print('Elapsed time:%.5f'%elapsed_time)
 
 
 # land for measure distance
@@ -149,7 +155,7 @@ time.sleep(1)
 while drone.mode.name != "GUIDED":
     print "Waiting for the GUIDED mode."
     time.sleep(2)
-state = arm_and_takeoff(drone, 3)
+state = arm_and_takeoff(drone, 2.5)
 # -------------------------------------homing-----------------------------------------------
 # ------------------stop when the same period of time reached-------------------------------
 #-------------------------------------------------------------------------------------------
@@ -227,14 +233,16 @@ while drone.mode.name == "GUIDED":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     # show data for debugging
-    if frame_num % 10==0:
+    if frame_num % 100==0:
         angle_gps, distance_gps = cx_gps.decode_cpu4(cpu4_gps) 
         print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone_heading, 
               (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
 
+    if elapsed_time>0.1:
+        print('Elapsed time:%.5f'%elapsed_time)
+    
     prvs = next
 
-drone.mode = VehicleMode("RTL")
 print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
 print((angle_optical/np.pi) * 180, distance_optical)
 drone.close()

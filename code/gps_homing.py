@@ -8,10 +8,11 @@ from CX_model import cx_rate, central_complex
 from dronekit import VehicleMode
 from CX_model.optical_flow import Optical_flow, FRAME_DIM
 from CX_model.central_complex import update_cells
-from CX_model.drone_ardupilot import arm, arm_and_takeoff, condition_yaw, send_ned_velocity
+from CX_model.drone_ardupilot import arm, arm_and_takeoff, condition_yaw, \
+      send_ned_velocity, adds_3wayP_mission, adds_10wayP_mission
 
-#connection_string = "127.0.0.1:14550"
-connection_string = '/dev/ttyAMA0'
+connection_string = "127.0.0.1:14550"
+#connection_string = '/dev/ttyAMA0'
 
 # initialize logger
 time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
@@ -33,7 +34,15 @@ except dronekit.APIException:
 except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
-state = arm_and_takeoff(drone,5)
+
+# upload mission, arm and takeoff
+cmds = drone.commands
+cmds.download()
+cmds.wait_ready()
+home=drone.home_location
+adds_3wayP_mission(drone, home, drone.heading, 2.5)
+#adds_3wayP_mission(drone, home, drone.heading, 2.5)
+state = arm_and_takeoff(drone, 2.5)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
@@ -47,13 +56,14 @@ while nextwaypoint <= 1:
     nextwaypoint = drone.commands.next
     time.sleep(1)
 
+# -------------------------start mission--------------------------------
+# -----------------end when mode switched ------------------------------
+#-----------------------------------------------------------------------
+# moving out, update CX model
 sl = 0
 sr = 0
 angle_optical = 0
 distance_optical = 0
-
-
-# moving out, update CX model
 frame_num = 0
 start_time = time.time()
 print "Start to update CX model, switch mode to end"
@@ -84,20 +94,36 @@ while drone.mode.name == "AUTO":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     # moniter the mission
-    if frame_num%10==0:
-        print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
-              (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
-        display_seq = drone.commands.next
-        print "Moving to waypoint: ", display_seq
-        nextwaypoint = drone.commands.next
+    if nextwaypoint < len(drone.commands):
+        if frame_num%20==0:
+            display_seq = drone.commands.next
+            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
+                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
+            print "Moving to waypoint %s" % display_seq
+            nextwaypoint = drone.commands.next
+    else:
+        break
 
-    time.sleep(0.1)
+    if elapsed_time > 0.1:
+        print('Elapsed time:%.5f'%elapsed_time)
 
-# homing, stop when the same period of time reached
-drone.mode = VehicleMode("GUIDED")
-time.sleep(1)
+    time.sleep(0.05)
 
+# land for measure distance
+drone.mode = VehicleMode("LAND")
+print "Landing, wait for GUided mode"
+time.sleep(10)
+# wait until GUIDED mode is set
+while drone.mode.name != "GUIDED":
+    print "Waiting for the GUIDED mode."
+    time.sleep(2)
+state = arm_and_takeoff(drone, 3)
+
+# -------------------------------------homing-----------------------------------------------
+# ------------------stop when the same period of time reached-------------------------------
+#-------------------------------------------------------------------------------------------
 # rotate to return direction first
+send_ned_velocity(drone, 0, 0, 0, 1)
 while drone.mode.name == "GUIDED":
     drone_heading = drone.heading/180.0*np.pi
     velocity = np.array([0, 0]) / 4.0 # normarlization
@@ -132,15 +158,15 @@ while drone.mode.name == "GUIDED":
     frame_num -= 1
     
 
-    if (frame_num) % 5==0:
+    if (frame_num) % 10==0:
         heading = motor_gps*200.0
         heading = np.min([np.max([-10,heading]), 10])
         print heading
         #navigation_heading += heading
-        if np.abs(heading) > 1.0:
+        if np.abs(heading) > 0.5:
             print "rotating"
             condition_yaw(drone, heading, relative=True)
-    if (frame_num+1) % 5 == 0:
+    if (frame_num+1) % 10 == 0:
        send_ned_velocity(drone, 3*np.cos(drone_heading), 3*np.sin(drone_heading), 0, 1)
 
     elapsed_time = time.time() - start_time
@@ -154,14 +180,16 @@ while drone.mode.name == "GUIDED":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     # show data for debugging
-    if frame_num % 10==0:
+    if frame_num % 20==0:
         angle_gps, distance_gps = cx_gps.decode_cpu4(cpu4_gps) 
         print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone_heading, 
               (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
 
-    time.sleep(0.1)
+    if elapsed_time > 0.1:
+        print('Elapsed time:%.5f'%elapsed_time)
 
-drone.mode = VehicleMode("RTL")
+    time.sleep(0.05)
+
 print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
 print((angle_optical/np.pi) * 180, distance_optical)
 drone.close()

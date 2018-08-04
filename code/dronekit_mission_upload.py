@@ -5,8 +5,7 @@ import time
 import cv2
 from dronekit import connect, VehicleMode, LocationGlobalRelative, LocationGlobal, Command
 from CX_model.drone_ardupilot import arm, arm_and_takeoff, download_mission, get_angles_degree, \
-     get_location_metres, arm_and_takeoff, condition_yaw, send_ned_velocity, save_mission, readmission, \
-     upload_mission, MAV_CMD_NAV_WAYPOINT, adds_3wayP_mission, adds_10wayP_mission
+     get_location_metres, arm_and_takeoff, condition_yaw, send_ned_velocity, save_mission, readmission, upload_mission
 from pymavlink import mavutil
 
 connection_string = "127.0.0.1:14550"
@@ -44,11 +43,6 @@ print " Airspeed: %s" % vehicle.airspeed    # settable
 print " Mode: %s" % vehicle.mode.name    # settable
 print " Armed: %s\n\n" % vehicle.armed    # settable
 
-char = raw_input("Check the status, press anykey to continue, \'q\' to quit")
-if char == 'q':
-    raise Exception('Mission cancelled!')
-else:
-    print 'Mission start.'
 
 vehicle.mode = VehicleMode("GUIDED")
 time.sleep(2)
@@ -58,24 +52,18 @@ while vehicle.mode.name != "GUIDED":
     time.sleep(2)
 
 if vehicle:
+    upload_mission(vehicle, "sample_mission.txt")
+    time.sleep(2)
+    home=vehicle.home_location
     # Load commands
     cmds = vehicle.commands
     cmds.download()
     cmds.wait_ready()
-
-    home=vehicle.home_location
-    
-    adds_10wayP_mission(vehicle, home, vehicle.heading, 2.5)
-
-    # Compute the angle between the cureent position and first waypoint
-    for cmd in cmds:
-        if cmd.command == MAV_CMD_NAV_WAYPOINT:
-            break
+    cmd = cmds[3]
     first_waypoint = LocationGlobalRelative(cmd.x, cmd.y, cmd.z)
     arm_and_takeoff(vehicle, 4)
     send_ned_velocity(vehicle, 0, 0, 0, 1)
-    orientation_to_go = get_angles_degree(home,first_waypoint)
-    condition_yaw(vehicle, orientation_to_go, 0)
+    condition_yaw(vehicle, get_angles_degree(home,first_waypoint), 1)
     print get_angles_degree(home,first_waypoint)
     time.sleep(5)
 

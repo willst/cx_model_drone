@@ -117,7 +117,7 @@ class Optical_flow():
         '''    
         mag = LA.norm(flow/left_filter, axis=2)
     
-        mag[mag < 3.0] = 0  # filter out those noisy flow
+        mag[mag < 4.0] = 0  # filter out those noisy flow
         mag[mag > 0.0] = 1.0
         count = np.sum(mag)
     

@@ -8,12 +8,13 @@ from CX_model import cx_rate, central_complex
 from dronekit import VehicleMode
 from CX_model.optical_flow import Optical_flow, FRAME_DIM
 from CX_model.central_complex import update_cells
-from CX_model.drone_ardupilot import arm, arm_and_takeoff
+from CX_model.drone_ardupilot import arm_and_takeoff, adds_3wayP_mission
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 from CX_model.video_threading import picameraThread
 
 resolution = FRAME_DIM['medium']
+#resolution = FRAME_DIM['large']
 print "Resolution: ", resolution
 
 # command line arguments halder
@@ -23,6 +24,16 @@ parser.add_argument('--recording', default = 'no',
 
 args = parser.parse_args()
 RECORDING = args.recording
+
+# connect to PX4, 
+try:
+    drone = dronekit.connect('/dev/ttyAMA0', baud = 921600, heartbeat_timeout=15)
+except dronekit.APIException:
+    logging.critical('Timeout! Fail to connect PX4')
+    raise Exception('Timeout! Fail to connct PX4')
+except:
+    logging.critical('Some other error!')
+    raise Exception('Fail to connct PX4')
 
 # initialize logger
 time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
@@ -63,15 +74,10 @@ if RECORDING == 'true':
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
     out = cv2.VideoWriter(fname,fourcc, 20.0, (fw,fh), False)
 
-# connect to PX4, arm and takeoff
-try:
-    drone = dronekit.connect('/dev/ttyAMA0', baud = 921600, heartbeat_timeout=15)
-except dronekit.APIException:
-    logging.critical('Timeout! Fail to connect PX4')
-    raise Exception('Timeout! Fail to connct PX4')
-except:
-    logging.critical('Some other error!')
-    raise Exception('Fail to connct PX4')
+# upload mission, arm and takeoff
+home=drone.home_location
+adds_3wayP_mission(drone, home, drone.heading, 2.5)
+#adds_10wayP_mission(drone, home, drone.heading, 2.5)
 state = arm_and_takeoff(drone, 2.5)
 
 # set to mission mode.
@@ -79,9 +85,9 @@ drone.mode = VehicleMode("AUTO")
 while drone.mode.name != "AUTO":
     print "Waiting for the mission mode."
     time.sleep(2)
-# wait until reach first waypoint, 1->home, 2->takeoff
+# wait until reach first waypoint, 1->takeoff, 2-> first waypoint
 nextwaypoint = drone.commands.next
-while nextwaypoint < 3:
+while nextwaypoint < 2:
     print "Initialisation, Moving to waypoint", drone.commands.next+1
     nextwaypoint = drone.commands.next
     time.sleep(1)
@@ -133,16 +139,22 @@ while drone.mode.name == "AUTO":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     # moniter the mission
-    if frame_num%10==0:
-        display_seq = drone.commands.next+1
-        #print "Moving to waypoint: ", display_seq
-        nextwaypoint = drone.commands.next
+    if nextwaypoint < len(drone.commands):
+        if frame_num%20==0:
+            display_seq = drone.commands.next
+            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
+                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
+            print "Moving to waypoint %s" % display_seq
+            nextwaypoint = drone.commands.next
+    else:
+        break
 
     prvs = next
     if elapsed_time > 0.1:
         print('Elapsed time:%.5f'%elapsed_time)
 
 print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
+drone.mode = VehicleMode("RTL")
 print((angle_optical/np.pi) * 180, distance_optical)
 drone.close()
 if RECORDING == 'true':
