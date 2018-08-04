@@ -8,7 +8,8 @@ from CX_model import cx_rate, central_complex
 from dronekit import VehicleMode
 from CX_model.optical_flow import Optical_flow, FRAME_DIM
 from CX_model.central_complex import update_cells
-from CX_model.drone_ardupilot import arm_and_takeoff, adds_3wayP_mission
+from CX_model.drone_ardupilot import arm_and_takeoff, adds_3wayP_mission, \
+     adds_10wayP_mission, LocationGlobalRelative
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 from CX_model.video_threading import picameraThread
@@ -75,7 +76,8 @@ if RECORDING == 'true':
     out = cv2.VideoWriter(fname,fourcc, 20.0, (fw,fh), False)
 
 # upload mission, arm and takeoff
-home=drone.home_location
+#home=drone.home_location
+home=LocationGlobalRelative(55.940784, -3.192819, 0)
 adds_3wayP_mission(drone, home, drone.heading, 2.5)
 #adds_10wayP_mission(drone, home, drone.heading, 2.5)
 state = arm_and_takeoff(drone, 2.5)

@@ -1,5 +1,6 @@
 import dronekit
 import socket
+import numpy as np
 import exceptions
 import time
 import cv2
@@ -8,8 +9,8 @@ from CX_model.drone_ardupilot import arm, arm_and_takeoff, download_mission, get
      get_location_metres, arm_and_takeoff, condition_yaw, send_ned_velocity, save_mission, readmission, upload_mission
 from pymavlink import mavutil
 
-connection_string = "127.0.0.1:14550"
-#connection_string = '/dev/ttyAMA0'
+#connection_string = "127.0.0.1:14550"
+connection_string = '/dev/ttyAMA0'
 
 # Try to connect to PX4
 try:
@@ -51,43 +52,69 @@ while vehicle.mode.name != "GUIDED":
     print "Failed to enter GUIDED mode"
     time.sleep(2)
 
-if vehicle:
-    upload_mission(vehicle, "sample_mission.txt")
-    time.sleep(2)
-    home=vehicle.home_location
-    # Load commands
-    cmds = vehicle.commands
-    cmds.download()
-    cmds.wait_ready()
-    cmd = cmds[3]
-    first_waypoint = LocationGlobalRelative(cmd.x, cmd.y, cmd.z)
-    arm_and_takeoff(vehicle, 4)
-    send_ned_velocity(vehicle, 0, 0, 0, 1)
-    condition_yaw(vehicle, get_angles_degree(home,first_waypoint), 1)
-    print get_angles_degree(home,first_waypoint)
-    time.sleep(5)
 
-    vehicle.mode = VehicleMode("AUTO")
-    # monitor mission execution
-    nextwaypoint = vehicle.commands.next
-    while nextwaypoint < len(vehicle.commands):
-        if vehicle.commands.next > nextwaypoint:
-            display_seq = vehicle.commands.next
-            print "Moving to waypoint %s" % display_seq
-            nextwaypoint = vehicle.commands.next
-        time.sleep(1)
+# Load commands
+cmds = vehicle.commands
+cmds.download()
+cmds.wait_ready()
+home=vehicle.home_location
 
 
+cmds = vehicle.commands
 
-    print 'Return to launch'
-    vehicle.mode = VehicleMode("RTL")
-    time.sleep(2)
+print " Clear any existing commands"
+cmds.clear() 
 
-    save_mission(vehicle, 'sample_mission.txt')
-    
+print " Define/add new commands."
 
 
-    #Close vehicle object before exiting script
-    print "Close vehicle object"
-    vehicle.close()
+alt = 2.5    # Mission height
+# Add new commands. The meaning/order of the parameters is documented in the Command class.      
+#Add MAV_CMD_NAV_TAKEOFF command. This is ignored if the vehicle is already in the air.
+cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+          mavutil.mavlink.MAV_CMD_NAV_TAKEOFF, 0, 0, 0, 0, 0, 0, home.lat, home.lon, alt)
+cmds.add(cmd)
+
+# goto the first waypoint, 
+cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+          mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 4, 0, 0, 0, home.lat, home.lon, alt+2)
+cmds.add(cmd)
+
+# goto the second waypoint
+cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+          mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 4, 0, 0, 0, home.lat, home.lon, alt)
+cmds.add(cmd)
+
+# add an extra point so that we know we reach the last waypoint
+cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+          mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 0, 0, 0, 0, home.lat, home.lon, alt)
+cmds.add(cmd)
+
+# Upload mission
+print " Upload new commands to vehicle"
+cmds.upload()
+time.sleep(2)
+
+
+state = arm_and_takeoff(vehicle, alt)
+
+vehicle.mode = VehicleMode("AUTO")
+# monitor mission execution
+nextwaypoint = vehicle.commands.next
+while nextwaypoint < len(vehicle.commands):
+    if vehicle.commands.next > nextwaypoint:
+        display_seq = vehicle.commands.next
+        print "Moving to waypoint %s" % display_seq
+        nextwaypoint = vehicle.commands.next
+time.sleep(1)
+
+
+print 'Return to launch'
+vehicle.mode = VehicleMode("LAND")
+time.sleep(2)
+
+
+#Close vehicle object before exiting script
+print "Close vehicle object"
+vehicle.close()
 
