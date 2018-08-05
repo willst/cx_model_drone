@@ -71,6 +71,10 @@ except dronekit.APIException:
 except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
+cmds=drone.commands
+cmds.download()
+cmds.wait_ready()
+home=drone.home_location
 add_3wayP_mission(drone, drone.headind, 3)
 state = arm_and_takeoff(drone, 3)
 

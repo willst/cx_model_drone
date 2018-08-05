@@ -14,8 +14,8 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 from CX_model.video_threading import picameraThread
 
-#resolution = FRAME_DIM['medium']
-resolution = FRAME_DIM['large']
+resolution = FRAME_DIM['medium']
+#resolution = FRAME_DIM['large']
 print "Resolution: ", resolution
 
 # command line arguments halder
@@ -80,9 +80,9 @@ cmds=drone.commands
 cmds.download()
 cmds.wait_ready()
 home=drone.home_location
-adds_3wayP_mission(drone, home, drone.heading, 3)
+adds_3wayP_mission(drone, home, drone.heading, 4)
 #adds_10wayP_mission(drone, home, drone.heading, 2.5)
-state = arm_and_takeoff(drone, 3)
+state = arm_and_takeoff(drone, 4)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
@@ -146,9 +146,10 @@ while drone.mode.name == "AUTO":
     if nextwaypoint < len(drone.commands):
         if frame_num%20==0:
             display_seq = drone.commands.next
-            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
-                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
+#            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
+#                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
             print "Moving to waypoint %s" % display_seq
+            print "height", drone.location.global_relative_frame.alt, drone.rangefinder.distance
             nextwaypoint = drone.commands.next
     else:
         break
