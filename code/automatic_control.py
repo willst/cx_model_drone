@@ -10,24 +10,26 @@ from CX_model.optical_flow import Optical_flow, FRAME_DIM
 from CX_model.central_complex import update_cells
 from CX_model.drone_ardupilot import arm_and_takeoff, adds_3wayP_mission, \
      adds_10wayP_mission, LocationGlobalRelative
-from picamera.array import PiRGBArray
-from picamera import PiCamera
 from CX_model.video_threading import picameraThread
 
-resolution = FRAME_DIM['medium']
-#resolution = FRAME_DIM['large']
-print "Resolution: ", resolution
 HEIGHT = 4
+resolution = FRAME_DIM['medium']
+print "Resolution: ", resolution
 
-# command line arguments halder
+# command line arguments handlder
 parser = argparse.ArgumentParser(description='CX model navigation.')
-parser.add_argument('--recording', default = 'no', 
+parser.add_argument('--recording', default = 'false', 
                     help='Recoding option, true or false(default: false)')
-
+parser.add_argument('--scale', default = 1.0, type=float,
+                    help='scale of the route')
+parser.add_argument('--windy', default = 1, type=bool,
+                    help='Route depends on the weather, no windy make it more random')
 args = parser.parse_args()
+scale = args.scale
+windy = args.windy
 RECORDING = args.recording
 
-# connect to PX4, 
+# connect to PX4 and upload mission
 try:
     drone = dronekit.connect('/dev/ttyAMA0', baud = 921600, heartbeat_timeout=15)
 except dronekit.APIException:
@@ -36,6 +38,13 @@ except dronekit.APIException:
 except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
+
+cmds=drone.commands
+cmds.download()
+cmds.wait_ready()
+home=drone.home_location
+adds_3wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
+#adds_10wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
 
 # initialize logger
 time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
@@ -58,11 +67,9 @@ frame_num = 0
 picam = picameraThread(1, "picamera_video", resolution, 30)
 picam.start()
 fw,fh = resolution
-# allow the camera to warmup
-time.sleep(0.1)
+time.sleep(0.1)    # allow the camera to warmup
 print("Frame size: {}*{}".format(fw, fh))
 
-# intialise optical flow object
 optflow = Optical_flow(resolution)
 temp = picam.get_frame()
 prvs = optflow.undistort(temp)
@@ -76,16 +83,8 @@ if RECORDING == 'true':
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
     out = cv2.VideoWriter(fname,fourcc, 20.0, (fw,fh), False)
 
-# upload mission, arm and takeoff
-cmds=drone.commands
-cmds.download()
-cmds.wait_ready()
-home=drone.home_location
-adds_3wayP_mission(drone, home, drone.heading, HEIGHT, False)
-#adds_10wayP_mission(drone, home, drone.heading, HEIGHT)
+# arm and set to mission mode.
 state = arm_and_takeoff(drone, HEIGHT)
-
-# set to mission mode.
 drone.mode = VehicleMode("AUTO")
 while drone.mode.name != "AUTO":
     print "Waiting for the mission mode."
@@ -96,7 +95,6 @@ while nextwaypoint < 2:
     print "Initialisation, Moving to waypoint", drone.commands.next+1
     nextwaypoint = drone.commands.next
     time.sleep(1)
-
 
 start_time = time.time()
 print "Start to update CX model, switch mode to end"
@@ -149,19 +147,19 @@ while drone.mode.name == "AUTO":
             display_seq = drone.commands.next
 #            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
 #                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
-            print "Moving to waypoint %s" % display_seq
             print "height", drone.location.global_relative_frame.alt, drone.rangefinder.distance
             nextwaypoint = drone.commands.next
     else:
         break
 
     prvs = next
-    if elapsed_time > 0.1:
+    if elapsed_time > 0.11:
         print('Elapsed time:%.5f'%elapsed_time)
 
-print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
-drone.mode = VehicleMode("RTL")
-print((angle_optical/np.pi) * 180, distance_optical)
+print "\n\nMission ended or stoppped. The final results of CX model based on optcial flow is:"
+print(' Angle_optical:{}\n Distance_optical:{}\n Angle_gps:{}\n Distance_gps:{}\n elapsed_time:{}' \
+      .format((angle_optical/np.pi)*180.0, distance_optical, \
+      (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 drone.close()
 if RECORDING == 'true':
     out.release()

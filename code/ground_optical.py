@@ -49,11 +49,15 @@ try:
     for i in range(len(model_info)):
         elapsed_time = model_info[i].split('elapsed_time:')[-1]
         time_list.append(float(elapsed_time))
+        heading = float(navigation_info[i].split(' ')[2].split(':')[-1])
+        heading_list.append(heading)
+
     data_length = len(model_info)
 except:
     print "Fail to find log file"
     data_length = 200
     time_list=np.ones(data_length, dtype=float)*0.1
+    heading_list=np.ones(data_length, dtype=float)
 
 angle_list = np.zeros(data_length, dtype=float)
 distance_list = np.zeros(data_length, dtype=float)
@@ -111,7 +115,7 @@ while True:
     speed_left[-1] = sl 
     speed_right = np.roll(speed_right, -1)
     speed_right[-1] = sr
-
+    '''
     ax1.clear()
     ax2.clear()
     ax3.clear()
@@ -122,11 +126,11 @@ while True:
     ax3.plot(x_axis, speed_right, 'b-')
     #ax4.bar(index, optical_direction, color='r', label='degree')
     plt.draw()
-
+    '''
     # updare cx_neurons
     velocity = np.array([sl, sr])
     tl2, cl1, tb1, tn1, tn2, memory, cpu4, cpu1, motor = update_cells(
-            heading=np.pi, velocity=velocity, tb1=tb1, memory=memory, cx=cx)
+            heading=heading_list[frame_num]/180.0*np.pi, velocity=velocity, tb1=tb1, memory=memory, cx=cx)
     angle, distance = cx.decode_cpu4(cpu4)
     angle_list[frame_num] = angle/np.pi*180.0
     distance_list[frame_num] = distance
@@ -145,6 +149,18 @@ while True:
             time.sleep(0.2)
     prvs = next
     start_time = time.time()
+
+
+ax1.clear()
+ax2.clear()
+ax3.clear()
+ax4.clear()
+ax1.plot(x_axis, speed_left, 'r-')
+ax2.plot(x_axis, speed_right, 'b-')
+ax3.plot(x_axis, speed_left, 'r-')
+ax3.plot(x_axis, speed_right, 'b-')
+#ax4.bar(index, optical_direction, color='r', label='degree')
+plt.draw()
 
 fig2, (ax6, ax5) = plt.subplots(2, sharey=False)
 ax6.plot(x_axis, angle_list, 'b-')

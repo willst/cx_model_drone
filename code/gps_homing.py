@@ -13,19 +13,19 @@ from CX_model.drone_ardupilot import arm, arm_and_takeoff, condition_yaw, \
 
 connection_string = "127.0.0.1:14550"
 #connection_string = '/dev/ttyAMA0'
+HEIGHT = 4
 
-# initialize logger
-time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
-fname = 'log_sim/' + time_string + '.log'
-logging.basicConfig(filename=fname,level=logging.DEBUG)
+# command line arguments handlder
+parser = argparse.ArgumentParser(description='CX model navigation.')
+parser.add_argument('--scale', default = 1.0, type=float,
+                    help='scale of the route')
+parser.add_argument('--windy', default = 1, type=bool,
+                    help='Route depends on the weather, no windy make it more random')
+args = parser.parse_args()
+scale = args.scale
+windy = args.windy
 
-# initialize CX models
-cx_gps = cx_rate.CXRate(noise = 0)
-tb1_gps = np.zeros(central_complex.N_TB1)
-memory_gps = 0.5 * np.ones(central_complex.N_CPU4)
-cpu4_gps = np.zeros(16)
-
-# connect to PX4 and arm
+# connect to PX4 and upload mission
 try:
     drone = dronekit.connect(connection_string, baud = 921600, heartbeat_timeout=15)
 except dronekit.APIException:
@@ -35,18 +35,29 @@ except:
     logging.critical('Some other error!')
     raise Exception('Fail to connct PX4')
 
-# upload mission, arm and takeoff
 cmds = drone.commands
 cmds.download()
 cmds.wait_ready()
 drone.home_location = drone.location.global_frame
 time.sleep(0.1)
 home=drone.home_location
-#adds_3wayP_mission(drone, home, drone.heading, 4, False)
-adds_10wayP_mission(drone, home, drone.heading, 4)
-state = arm_and_takeoff(drone, 4)
+adds_3wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
+#adds_10wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
 
-# set to mission mode.
+# initialize logger
+time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
+fname = 'log_sim/' + time_string + '.log'
+logging.basicConfig(filename=fname,level=logging.DEBUG)
+
+
+# initialize CX models
+cx_gps = cx_rate.CXRate(noise = 0)
+tb1_gps = np.zeros(central_complex.N_TB1)
+memory_gps = 0.5 * np.ones(central_complex.N_CPU4)
+cpu4_gps = np.zeros(16)
+
+# takeoff and set to mission mode.
+state = arm_and_takeoff(drone, HEIGHT)
 drone.mode = VehicleMode("AUTO")
 while drone.mode.name != "AUTO":
     print "Pre-intialisation, waiting for the AUTO mode."
@@ -107,10 +118,14 @@ while drone.mode.name == "AUTO":
         break
 
     if elapsed_time > 0.1:
-        print('Elapsed time:%.5f'%elapsed_time)
+        print('Elapsed time:%.5f!!!!!!!!!!!'%elapsed_time)
 
     time.sleep(0.05)
 
+print "\n\nMission ended or stoppped. The final results of CX model based on optcial flow is:"
+print(' Angle_optical:{}\n Distance_optical:{}\n Angle_gps:{}\n Distance_gps:{}\n elapsed_time:{}' \
+      .format((angle_optical/np.pi)*180.0, distance_optical, \
+      (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 # land for measure distance
 drone.mode = VehicleMode("LAND")
 print "Landing, wait for GUided mode"
@@ -119,7 +134,7 @@ time.sleep(10)
 while drone.mode.name != "GUIDED":
     print "Waiting for the GUIDED mode."
     time.sleep(2)
-state = arm_and_takeoff(drone, 3)
+state = arm_and_takeoff(drone, HEIGHT)
 
 # -------------------------------------homing-----------------------------------------------
 # ------------------stop when the same period of time reached-------------------------------
@@ -132,7 +147,7 @@ while drone.mode.name == "GUIDED":
     __, __, tb1_gps, __, __, memory_gps, cpu4_gps, __, motor_gps = \
                 update_cells(heading=drone_heading, velocity=velocity, \
                              tb1=tb1_gps, memory=memory_gps, cx=cx_gps)
-    heading = motor_gps*200.0
+    heading = motor_gps*100.0 / scale
     heading = np.min([np.max([-10,heading]), 10])
     print heading
     if np.abs(heading) > 1.0:
@@ -142,6 +157,7 @@ while drone.mode.name == "GUIDED":
         break;
     time.sleep(0.5)
 
+start_time = time.time()
 while drone.mode.name == "GUIDED":
 
     velocity = drone.velocity
@@ -161,12 +177,13 @@ while drone.mode.name == "GUIDED":
     
 
     if (frame_num) % 10==0:
-        heading = motor_gps*200.0
-        heading = np.min([np.max([-10,heading]), 10])
-        print heading
+        heading = motor_gps*100.0 / scale
+        if heading>2:
+            heading = heading*8.0 + 1
+        heading = np.min([np.max([-15,heading]), 15])
         #navigation_heading += heading
         if np.abs(heading) > 0.5:
-            print "rotating"
+            print "rotating, ", heading
             condition_yaw(drone, heading, relative=True)
     if (frame_num+1) % 10 == 0:
        send_ned_velocity(drone, 1.5*np.cos(drone_heading), 1.5*np.sin(drone_heading), 0, 1)
@@ -188,11 +205,13 @@ while drone.mode.name == "GUIDED":
               (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
 
     if elapsed_time > 0.1:
-        print('Elapsed time:%.5f'%elapsed_time)
+        print('Elapsed time:%.5f !!!!!!!!!!!!!'%elapsed_time)
 
     time.sleep(0.05)
 
-print "Mission ended or stoppped. The final results of CX model based on optcial flow is:"
-print((angle_optical/np.pi) * 180, distance_optical)
+print "\n\nMission ended or stoppped. The final results of CX model based on optcial flow is:"
+print(' Angle_optical:{}\n Distance_optical:{}\n Angle_gps:{}\n Distance_gps:{}\n elapsed_time:{}' \
+      .format((angle_optical/np.pi)*180.0, distance_optical, \
+      (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 drone.close()
 cv2.destroyAllWindows()
