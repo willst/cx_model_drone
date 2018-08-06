@@ -17,6 +17,7 @@ from CX_model.video_threading import picameraThread
 resolution = FRAME_DIM['medium']
 #resolution = FRAME_DIM['large']
 print "Resolution: ", resolution
+HEIGHT = 4
 
 # command line arguments halder
 parser = argparse.ArgumentParser(description='CX model navigation.')
@@ -80,9 +81,9 @@ cmds=drone.commands
 cmds.download()
 cmds.wait_ready()
 home=drone.home_location
-adds_3wayP_mission(drone, home, drone.heading, 4)
-#adds_10wayP_mission(drone, home, drone.heading, 2.5)
-state = arm_and_takeoff(drone, 4)
+adds_3wayP_mission(drone, home, drone.heading, HEIGHT, False)
+#adds_10wayP_mission(drone, home, drone.heading, HEIGHT)
+state = arm_and_takeoff(drone, HEIGHT)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
@@ -144,7 +145,7 @@ while drone.mode.name == "AUTO":
 
     # moniter the mission
     if nextwaypoint < len(drone.commands):
-        if frame_num%20==0:
+        if frame_num%40==0:
             display_seq = drone.commands.next
 #            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
 #                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))

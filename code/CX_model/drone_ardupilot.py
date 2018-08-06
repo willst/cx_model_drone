@@ -358,7 +358,7 @@ def adds_Lshape_mission(vehicle, home, aSize, alt):
     cmds.upload()
     time.sleep(2)
 
-def adds_3wayP_mission(vehicle, home, heading, alt):
+def adds_3wayP_mission(vehicle, home, heading=0, alt=4.0, windy=False):
     """ 
     Three waypoints mission with a total length of 140m. Start from the intial heading.
 
@@ -366,6 +366,12 @@ def adds_3wayP_mission(vehicle, home, heading, alt):
     (you must have called download at least once in the session and after clearing the mission)
     """
 
+    if windy:
+        angle_list = [0, 60, 0, 30]      # The last one is relative to home position!
+        distance_list = [10, 20, 10, 40]  # The last one is relative to home position!
+    else:
+        angle_list = [0, -60, -60]          # The last one is relative to home position!
+        distance_list = [20, 20, 40]     # The last one is relative to home position!
     cmds = vehicle.commands
 
     print " Clear any existing commands"
@@ -373,8 +379,6 @@ def adds_3wayP_mission(vehicle, home, heading, alt):
     
     print " Define/add new commands."
 
-    
-    #alt = 2.5    # Mission height
     # Add new commands. The meaning/order of the parameters is documented in the Command class.      
     #Add MAV_CMD_NAV_TAKEOFF command. This is ignored if the vehicle is already in the air.
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
@@ -382,25 +386,87 @@ def adds_3wayP_mission(vehicle, home, heading, alt):
     cmds.add(cmd)
 
     # goto the first waypoint, 
-    dNorth = 20*np.cos(heading/180.0*np.pi)
-    dEast = 20*np.sin(heading/180.0*np.pi)
+    dNorth = distance_list[0] * np.cos((heading+angle_list[0])/180.0*np.pi)
+    dEast = distance_list[0] * np.sin((heading+angle_list[0])/180.0*np.pi)
     wp = get_location_metres(home, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto the second waypoint
-    dNorth = 20*np.cos((heading-60)/180.0*np.pi)
-    dEast = 20*np.sin((heading-60)/180.0*np.pi)
+    dNorth = distance_list[1] * np.cos((heading+angle_list[1])/180.0*np.pi)
+    dEast = distance_list[1] * np.sin((heading+angle_list[1])/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
-    # goto the third waypoint and hold 4 seconds
-    dNorth = 20*np.cos((heading-120)/180.0*np.pi)
-    dEast = 20*np.sin((heading-120)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
+    # goto the third waypoint if windy
+    if windy:
+        dNorth = distance_list[2] * np.cos((heading+angle_list[2])/180.0*np.pi)
+        dEast = distance_list[2] * np.sin((heading+angle_list[2])/180.0*np.pi)
+        wp = get_location_metres(wp, dNorth, dEast);
+        cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+                      mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
+        cmds.add(cmd)
+        
+
+    # goto the last waypoint and hold 4 seconds
+    dNorth = distance_list[-1] * np.cos((heading+angle_list[-1])/180.0*np.pi)
+    dEast = distance_list[-1] * np.sin((heading+angle_list[-1])/180.0*np.pi)
+    wp = get_location_metres(home, dNorth, dEast);
+    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 4, 0, 0, 0, wp.lat, wp.lon, alt)
+    cmds.add(cmd)
+
+    # add an extra point so that we know we reach the last waypoint
+    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 0, 0, 0, 0, wp.lat, wp.lon, alt)
+    cmds.add(cmd)
+
+    # Upload mission
+    print " Upload new commands to vehicle"
+    cmds.upload()
+    time.sleep(2)
+
+
+def adds_10wayP_mission(vehicle, home, heading, alt):
+    """ 
+    Three waypoints mission with a total length of 140m. Start from the intial heading.
+
+    The function assumes vehicle.commands matches the vehicle mission state 
+    (you must have called download at least once in the session and after clearing the mission)
+    """
+    angle_list = [0, 120, 60, 0, -60, 0, 60, 120, 60]      # The last one is relative to home position!
+    distance_list = [10, 20, 10, 10, 10, 10, 10, 10, 40]  # The last one is relative to home position!
+
+
+    cmds = vehicle.commands
+
+    print " Clear any existing commands"
+    cmds.clear() 
+    
+    print " Define/add new commands."
+  
+    # Add new commands. The meaning/order of the parameters is documented in the Command class.      
+    #Add MAV_CMD_NAV_TAKEOFF command. This is ignored if the vehicle is already in the air.
+    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+                  mavutil.mavlink.MAV_CMD_NAV_TAKEOFF, 0, 0, 0, 0, 0, 0, home.lat, home.lon, alt)
+    cmds.add(cmd)
+    wp = home
+    for i in range(len(angle_list)-1):
+        # goto the second waypoint
+        dNorth = distance_list[i] * np.cos((heading+angle_list[i])/180.0*np.pi)
+        dEast = distance_list[i] * np.sin((heading+angle_list[i])/180.0*np.pi)
+        wp = get_location_metres(wp, dNorth, dEast);
+        cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
+                      mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
+        cmds.add(cmd)
+
+     # goto the last waypoint and hold 4 seconds
+    dNorth = distance_list[-1] * np.cos((heading+angle_list[-1])/180.0*np.pi)
+    dEast = distance_list[-1] * np.sin((heading+angle_list[-1])/180.0*np.pi)
+    wp = get_location_metres(home, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
                   mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 4, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
@@ -430,118 +496,6 @@ def adds_random_mission(vehicle, home, heading, alt):
     cmds.clear() 
     
     print " Define/add new commands."
-  
-    # Add new commands. The meaning/order of the parameters is documented in the Command class.      
-    #Add MAV_CMD_NAV_TAKEOFF command. This is ignored if the vehicle is already in the air.
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_TAKEOFF, 0, 0, 0, 0, 0, 0, home.lat, home.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 1, 
-    dNorth = 10*np.cos(heading/180.0*np.pi)
-    dEast = 10*np.sin(heading/180.0*np.pi)
-    wp = get_location_metres(home, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 2
-    dNorth = 10*np.cos((heading-80)/180.0*np.pi)
-    dEast = 10*np.sin((heading-80)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 3
-    dNorth = 10*np.cos((heading-140)/180.0*np.pi)
-    dEast = 10*np.sin((heading-140)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 4
-    dNorth = 10*np.cos((heading-80)/180.0*np.pi)
-    dEast = 10*np.sin((heading-80)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 5
-    dNorth = 10*np.cos((heading)/180.0*np.pi)
-    dEast = 10*np.sin((heading)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 6
-    dNorth = 10*np.cos((heading+80)/180.0*np.pi)
-    dEast = 10*np.sin((heading+80)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 7
-    dNorth = 20*np.cos((heading-170)/180.0*np.pi)
-    dEast = 20*np.sin((heading-170)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 8
-    dNorth = 10*np.cos((heading+100)/180.0*np.pi)
-    dEast = 10*np.sin((heading+100)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto waypoint 9
-    dNorth = 40*np.cos((heading+30)/180.0*np.pi)
-    dEast = 40*np.sin((heading+30)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # goto the last waypoint and hold 4 seconds
-    dNorth = 10*np.cos((heading+90)/180.0*np.pi)
-    dEast = 10*np.sin((heading+90)/180.0*np.pi)
-    wp = get_location_metres(wp, dNorth, dEast);
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 4, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # add an extra point so that we know we reach the last waypoint
-    cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 0, 0, 0, 0, wp.lat, wp.lon, alt)
-    cmds.add(cmd)
-
-    # Upload mission
-    print " Upload new commands to vehicle"
-    cmds.upload()
-    time.sleep(2)
-
-
-def adds_10wayP_mission(vehicle, home, heading, alt):
-    """ 
-    Three waypoints mission with a total length of 140m. Start from the intial heading.
-
-    The function assumes vehicle.commands matches the vehicle mission state 
-    (you must have called download at least once in the session and after clearing the mission)
-    """
-
-    cmds = vehicle.commands
-
-    print " Clear any existing commands"
-    cmds.clear() 
-    
-    print " Define/add new commands."
 
     
     #alt = 2.5    # Mission height
@@ -556,7 +510,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 10*np.sin(heading/180.0*np.pi)
     wp = get_location_metres(home, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 2
@@ -564,7 +518,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 10*np.sin((heading-60)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 3
@@ -580,7 +534,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 20*np.sin((heading+120)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 5
@@ -588,7 +542,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 10*np.sin((heading+45)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 6
@@ -596,7 +550,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 10*np.sin((heading-10)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 7
@@ -604,7 +558,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 10*np.sin((heading-70)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 8
@@ -612,7 +566,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 15*np.sin((heading-120)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto waypoint 9
@@ -620,7 +574,7 @@ def adds_10wayP_mission(vehicle, home, heading, alt):
     dEast = 10*np.sin((heading-30)/180.0*np.pi)
     wp = get_location_metres(wp, dNorth, dEast);
     cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, 
-                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 2, 0, 0, 0, wp.lat, wp.lon, alt)
+                  mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 0, 1, 0, 0, 0, wp.lat, wp.lon, alt)
     cmds.add(cmd)
 
     # goto the last waypoint and hold 4 seconds

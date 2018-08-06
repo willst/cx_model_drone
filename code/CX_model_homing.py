@@ -8,10 +8,12 @@ from CX_model import cx_rate, central_complex
 from dronekit import VehicleMode
 from CX_model.optical_flow import Optical_flow, FRAME_DIM
 from CX_model.central_complex import update_cells
-from CX_model.drone_ardupilot import arm, arm_and_takeoff, condition_yaw, send_ned_velocity
+from CX_model.drone_ardupilot import arm, arm_and_takeoff, condition_yaw, send_ned_velocity, \
+     adds_3wayP_mission, adds_10wayP_mission
 from CX_model.video_threading import picameraThread
 
 connection_string = '/dev/ttyAMA0'
+HEIGHT = 4
 
 resolution = FRAME_DIM['medium']
 print "Resolution: ", resolution
@@ -74,9 +76,12 @@ except:
 cmds=drone.commands
 cmds.download()
 cmds.wait_ready()
+drone.home_location = drone.location.global_frame
+time.sleep(0.1)
 home=drone.home_location
-add_3wayP_mission(drone, drone.headind, 3)
-state = arm_and_takeoff(drone, 3)
+adds_3wayP_mission(drone, home, drone.heading, HEIGHT, True)
+#adds_10wayP_mission(drone, home, drone.heading, HEIGHT)
+state = arm_and_takeoff(drone, HEIGHT)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
@@ -141,15 +146,16 @@ while drone.mode.name == "AUTO":
     if nextwaypoint < len(drone.commands):
         if frame_num%40==0:
             display_seq = drone.commands.next
-            print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
-                  (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
+            #print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone.heading, 
+            #      (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
             print "Moving to waypoint %s" % display_seq
+            print "height", drone.location.global_relative_frame.alt
             nextwaypoint = drone.commands.next
     else:
         break
 
     prvs = next
-    if elapsed_time>0.1:
+    if elapsed_time>0.11:
         print('Elapsed time:%.5f'%elapsed_time)
 
 
@@ -160,7 +166,7 @@ time.sleep(1)
 while drone.mode.name != "GUIDED":
     print "Waiting for the GUIDED mode."
     time.sleep(2)
-state = arm_and_takeoff(drone, 2.5)
+state = arm_and_takeoff(drone, HEIGHT)
 # -------------------------------------homing-----------------------------------------------
 # ------------------stop when the same period of time reached-------------------------------
 #-------------------------------------------------------------------------------------------
@@ -238,11 +244,11 @@ while drone.mode.name == "GUIDED":
                  (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 
     # show data for debugging
-    if frame_num % 100==0:
+    if frame_num % 40==0:
         angle_gps, distance_gps = cx_gps.decode_cpu4(cpu4_gps) 
-        print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone_heading, 
-              (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
-
+        #print('heading:{} Angle:{} Distance:{} motor:{}'.format(drone_heading, 
+        #      (angle_gps/np.pi)*180.0, distance_gps, motor_gps))
+        print "height", drone.location.global_relative_frame.alt
     if elapsed_time>0.1:
         print('Elapsed time:%.5f'%elapsed_time)
     

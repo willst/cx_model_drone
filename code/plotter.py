@@ -80,10 +80,10 @@ for i in range(len(navigation_info)):
     lat_list.append(lat)
     lon_list.append(lon)
 
-    sl=navigation_info[i].split(' ')[0].split(':')[-1]
-    sr=navigation_info[i].split(' ')[1].split(':')[-1]
-    speed_left.append(float(sl))#*alt*alt/25)
-    speed_right.append(float(sr))#*alt*alt/25)
+    sl=float(navigation_info[i].split(' ')[0].split(':')[-1])
+    sr=float(navigation_info[i].split(' ')[1].split(':')[-1])
+    speed_left.append((sl)*alt*alt/25)
+    speed_right.append((sr)*alt*alt/25)
 
     heading = float(navigation_info[i].split(' ')[2].split(':')[-1])
     heading_list.append(heading)

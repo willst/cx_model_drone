@@ -11,8 +11,8 @@ from CX_model.central_complex import update_cells
 from CX_model.drone_ardupilot import arm, arm_and_takeoff, condition_yaw, \
       send_ned_velocity, adds_3wayP_mission, adds_10wayP_mission
 
-#connection_string = "127.0.0.1:14550"
-connection_string = '/dev/ttyAMA0'
+connection_string = "127.0.0.1:14550"
+#connection_string = '/dev/ttyAMA0'
 
 # initialize logger
 time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
@@ -39,10 +39,12 @@ except:
 cmds = drone.commands
 cmds.download()
 cmds.wait_ready()
+drone.home_location = drone.location.global_frame
+time.sleep(0.1)
 home=drone.home_location
-adds_3wayP_mission(drone, home, drone.heading, 2.5)
-#adds_3wayP_mission(drone, home, drone.heading, 2.5)
-state = arm_and_takeoff(drone, 2.5)
+#adds_3wayP_mission(drone, home, drone.heading, 4, False)
+adds_10wayP_mission(drone, home, drone.heading, 4)
+state = arm_and_takeoff(drone, 4)
 
 # set to mission mode.
 drone.mode = VehicleMode("AUTO")
