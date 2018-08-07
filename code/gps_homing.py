@@ -127,14 +127,14 @@ print(' Angle_optical:{}\n Distance_optical:{}\n Angle_gps:{}\n Distance_gps:{}\
       .format((angle_optical/np.pi)*180.0, distance_optical, \
       (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 # land for measure distance
-drone.mode = VehicleMode("LAND")
-print "Landing, wait for GUided mode"
-time.sleep(10)
+#drone.mode = VehicleMode("LAND")
+#print "Landing, wait for GUided mode"
+#time.sleep(10)
 # wait until GUIDED mode is set
 while drone.mode.name != "GUIDED":
     print "Waiting for the GUIDED mode."
     time.sleep(2)
-state = arm_and_takeoff(drone, HEIGHT)
+#state = arm_and_takeoff(drone, HEIGHT)
 
 # -------------------------------------homing-----------------------------------------------
 # ------------------stop when the same period of time reached-------------------------------

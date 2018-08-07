@@ -94,7 +94,7 @@ while drone.mode.name != "AUTO":
 # wait until reach first waypoint, 1->takeoff
 nextwaypoint = drone.commands.next
 while nextwaypoint <= 1:
-    print "Initialisation, Moving to waypoint", drone.commands.next+1
+    print "Initialisation, Moving to waypoint", drone.commands.next
     nextwaypoint = drone.commands.next
     time.sleep(1)
 
