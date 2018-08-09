@@ -128,6 +128,7 @@ print(' Angle_optical:{}\n Distance_optical:{}\n Angle_gps:{}\n Distance_gps:{}\
       (angle_gps/np.pi)*180.0, distance_gps, elapsed_time))
 # land for measure distance
 #drone.mode = VehicleMode("LAND")
+drone.mode = VehicleMode("GUIDED")
 #print "Landing, wait for GUided mode"
 #time.sleep(10)
 # wait until GUIDED mode is set
