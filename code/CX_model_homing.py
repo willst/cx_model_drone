@@ -45,8 +45,8 @@ cmds.wait_ready()
 drone.home_location = drone.location.global_frame
 time.sleep(0.1)
 home=drone.home_location
-adds_3wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
-#adds_10wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
+#adds_3wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
+adds_10wayP_mission(drone, home, drone.heading, HEIGHT, scale=scale, windy=windy)
 
 # initialize logger
 time_string = str(datetime.datetime.now()).replace(':', '-').replace(' ', '_').split('.')[0]
