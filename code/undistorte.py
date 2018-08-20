@@ -32,12 +32,7 @@ def undistort(img_path, balance=0.0, dim2=None, dim3=None):
     map1, map2 = cv2.fisheye.initUndistortRectifyMap(scaled_K, D, np.eye(3), new_K, dim3, cv2.CV_16SC2)
     undistorted_img = cv2.remap(img, map1, map2, interpolation=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT)
 
-    # crop images 
-    fh_s = int(0.2377*dim1[1])
-    fh_e = int(0.7377*dim1[1])
-    fw_s = int(0.15*dim1[0])
-    fw_e = int(0.85*dim1[0])
-    undistorted_img = undistorted_img[fh_s:fh_e, fw_s:fw_e] 
+   
 
     cv2.imshow('image', cv2.resize(undistorted_img, (0, 0), fx=scale, fy=scale))
     ch = 0xFF & cv2.waitKey(0)

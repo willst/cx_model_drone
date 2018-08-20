@@ -99,8 +99,9 @@ plt.show()
 
 # filter for speed retrieval
 row = np.linspace(0, fw, num=fw, endpoint=False)
-match_filter = np.sin((row/fw -0.5)*0.822*np.pi)
-
+#match_filter = np.sin((row/fw -0.5)*0.822*np.pi)
+match_filter_L = np.sin((np.arange(fw, dtype=float)-fw/4)/fw*(0.822*np.pi))
+match_filter_R = np.sin((np.arange(fw, dtype=float)-3*fw/4)/fw*(0.822*np.pi))
 start_time = time.time()
 while(1):    
     # Image processing, compute optical flow
@@ -125,14 +126,14 @@ while(1):
     mag[mag > 0.0] = 1.0
     count = np.sum(mag)
     weight = mag/((0.034+elapsed_time)*count*100+1)
-    sl = np.sum(frame_left * (match_filter)*weight)
+    sl = np.sum(hori_flow * (match_filter_L)*weight)
     # right speed
     mag = np.abs(frame_right/match_filter)
     mag[mag < 0.5] = 0
     mag[mag > 0.0] = 1.0
     count = np.sum(mag)
     weight = mag/((0.034+elapsed_time)*count*100+1)
-    sr = np.sum(frame_right * (match_filter)*weight)
+    sr = np.sum(hori_flow * (match_filter_R)*weight)
 
     # visulize computed speed 
     speed_left = np.roll(speed_left, 1)

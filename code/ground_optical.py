@@ -115,7 +115,7 @@ while True:
     speed_left[-1] = sl 
     speed_right = np.roll(speed_right, -1)
     speed_right[-1] = sr
-    '''
+    
     ax1.clear()
     ax2.clear()
     ax3.clear()
@@ -126,7 +126,7 @@ while True:
     ax3.plot(x_axis, speed_right, 'b-')
     #ax4.bar(index, optical_direction, color='r', label='degree')
     plt.draw()
-    '''
+    
     # updare cx_neurons
     velocity = np.array([sl, sr])
     tl2, cl1, tb1, tn1, tn2, memory, cpu4, cpu1, motor = update_cells(
